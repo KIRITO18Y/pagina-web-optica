@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devi <link rel="stylesheet" href="index.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <title>Pgina Principal</title>
+</head>
+<body>
+    <div class="flex items-center justify-between p-4 border-b">
+
+        <div class="flex items-center">
+            <img alt="Optica Kenedy logo" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg" width="50"/>
+            <span class="ml-2 text-gray-700">
+             Optica Kenedy
+            </span>
+           </div>
+
+
+        <div class="flex items-center">
+            <img alt="User profile picture" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg" width="50"/>
+           </div>
+    </div>
+
+    <div class="flex">
+                        <!-- Sidebar -->
+        <div class="w-1/8 bg-white h-screen p-4">
+            <div class="space-y-2">
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-blue-200 rounded-full border border-blue-400"></div>
+                    <p class="mt-1">Inicio</p>
+                </div>
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1"><a href="/Clientes/indexClientes.html">Clientes</a></p>
+                </div>
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1 ">Proveedores</p>
+                </div>
+
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1">Formulas</p>
+                </div>
+                
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1">Configuraciones</p>
+                </div>
+            </div> 
+        </div>
+
+        <!-- Main Container -->
+
+        <div class="w-5/6 p-4">
+            <div class="flex space-x-4 mb-4">
+                
+                <button class=" bg-blue-500 text-white px-4 py-2 rounded font-bold Abrir-modal"> + Nueva Formula</button>
+                <button class="border-2 border-blue-500 text-blue-500 px-4 py-2 rounded font-bold Clientes_modal"> + Nuevo Cliente</button>
+                <button class="border-2 border-gray-300 text-gray-500 px-4 py-2 rounded font-bold"> + Nuevo Producto</button>
+                <button class="border-2 border-gray-300 text-gray-500 px-4 py-2 rounded font-bold"> + Nuevo Compra</button>
+            </div>
+
+                    <!-- Cards Section -->
+             <div class="bg-gray-100 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
+
+                <div>
+                    <div class="container mx-auto p-4"> 
+                       
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                                <!-- Formulas Section -->
+                
+                        <div class="bg-white rounded-lg shadow p-4 ">
+                            <div class="flex items-center mb-4">
+                                <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                
+                                <h2 class="text-lg font-bold">Facturas por Cobrar</h2>
+                            </div>
+                                    <div class="space-y-1">
+                                        
+                                        <div class="rounded-lg border border-red-500 p-4 mb-4 ">
+                                            <div class="flex justify-between items-center mb-2">
+                                                <p class="font-bold">#00024</p>
+                                                <p class=" font-bold text-red-500">Valor: $200.000</p>     
+                                            </div>
+
+                                            <div class="flex justify-between ">
+                                                <p class="text-sm font-bold">DEIMER ANDRÉS NÚÑEZ NOVOA</p>
+                                                <i class="fas fa-play text-red-500"></i>
+                                            </div>
+                                            <p class=" text-gray-500">Fecha:24/03/2024</p>              
+                                        </div>
+                
+                                        <div class="rounded-lg border border-grey-500 p-4 mb-4">
+                                            <div class="flex justify-between items-center mb-2">
+                                                <p class="text-sm font-bold">#00024</p>
+                                                <p class="text-sm font-bold text-red-500">Valor: $200.000</p>
+                                            </div>
+                                                 
+                                            <div class=" flex justify-between">
+                                                <p class="text-sm font-bold">JAMES ZÚÑIGA ZÚÑIGA</p>
+                                                <i class="fas fa-play text-gray-500"></i>
+                                            </div>
+                                            <p class=" text-gray-500">Fecha:24/03/2024</p>  
+                                        </div>
+
+                                    </div>
+
+                                    <div class="flex justify-center mt-20">
+                                        <div class="mt-20">
+                                            <button class="px-2 py-1 border rounded"><<</button>
+                                            <button class="px-2 py-1 border rounded">1</button>
+                                            <button class="px-2 py-1 border rounded">2</button>
+                                            <button class="px-2 py-1 border rounded">3</button>
+                                            <button class="px-2 py-1 border rounded">>></button>
+                                        </div>
+                                    </div>                       
+                                </div>
+                                
+                
+                                    <!-- Cuentas Por Pagar -->
+                
+                                    <div class="bg-white rounded-lg shadow p-4 ">
+                                        <div class="flex items-center mb-4">
+                                            <div class="w-4 h-4 bg-pink-500 rounded-full mr-2"></div>
+                            
+                                            <h2 class="text-lg font-bold">Cuentas Por Pagar</h2>
+                                        </div>
+                                                <div class="space-y-1">
+                                                    
+                                                    <div class="rounded-lg border border-red-500 p-4 mb-4 ">
+                                                        <div class="flex justify-between items-center mb-2">
+                                                            <p class="font-bold">#00024</p>
+                                                            <p class="font-bold text-red-500">Valor: $200.000</p>     
+                                                        </div>
+            
+                                                        <div class="flex justify-between ">
+                                                            <p class="font-bold">Optic</p>
+                                                            <i class="fas fa-play text-red-500"></i>
+                                                        </div>
+                                                        <p class=" text-gray-500">Fecha:24/03/2024</p>       
+                                                    </div>
+                            
+                                                    <div class="rounded-lg border border-grey-600 p-4 mb-4">
+                                                        <div class="flex justify-between items-center mb-2">
+                                                            <p class="text-sm font-bold">#00024</p>
+                                                            <p class="text-sm font-bold text-blue-600">Valor: $200.000</p>
+                                                        </div>
+                                                             
+                                                        <div class=" flex justify-between">
+                                                            <p class="text-sm font-bold">OPTICAS COLOMBIA S.A.S.</p>
+                                                            <i class="fas fa-play text-gray-500"></i>
+                                                        </div>
+                                                        <p class=" text-gray-500">Fecha:24/03/2024</p>    
+
+                                                    </div>
+            
+                                                </div>
+            
+                                                <div class="flex justify-center mt-20">
+                                                    <div class="mt-20">
+                                                        <button class="px-2 py-1 border rounded"><<</button>
+                                                        <button class="px-2 py-1 border rounded">1</button>
+                                                        <button class="px-2 py-1 border rounded">2</button>
+                                                        <button class="px-2 py-1 border rounded">3</button>
+                                                        <button class="px-2 py-1 border rounded">>></button>
+                                                    </div>
+                                                </div>
+                                                
+                                               
+                                            </div>
+                
+                                    <!-- Productos en Stock -->
+                                
+                                    <div class="bg-white rounded-lg shadow p-4 ">
+                                        <div class="flex items-center mb-4">
+                                            <div class="w-4 h-4 bg-purple-500 rounded-full mr-2"></div>
+                            
+                                            <h2 class="text-lg font-bold">Productos en Stock</h2>
+                                        </div>
+                                                <div class="space-y-1">
+                                                    
+                                                    <div class="rounded-lg border border-red-500 p-4 mb-4 ">
+                                                        <div class="flex justify-between items-center mb-2">
+                                                            <p class="font-bold">#00050</p>
+                                                            <p class=" text-sm font-bold text-purple-500 ">10</p>                                                                
+                                                        </div>
+
+                                                        <div class="flex justify-between ">
+                                                            <p class="text-sm font-bold">Lentes UV</p>
+                                                            <i class="fas fa-play text-gray-500"></i>
+                                                        </div>
+                                                        <p class=" text-gray-500">Fecha:24/03/2024</p>              
+                                                    </div>
+                            
+                                                    <div class="rounded-lg border border-grey-500 p-4 mb-4">
+                                                        <div class="flex justify-between items-center mb-2">
+                                                            <p class="text-sm font-bold">#00024</p>
+                                                            <p class="text-sm font-bold text-purple-500">10</p>
+                                                        </div>
+                                                             
+                                                        <div class=" flex justify-between">
+                                                            <p class="text-sm font-bold">Monturas Roja</p>
+                                                            <i class="fas fa-play text-gray-500"></i>
+                                                        </div>
+                                                        <p class=" text-gray-500">Fecha:24/03/2024</p>   
+                                                    </div>  
+                                                </div>
+            
+                                                <div class="flex justify-center mt-20">
+                                                    <div class="mt-20">
+                                                        <button class="px-2 py-1 border rounded"><<</button>
+                                                        <button class="px-2 py-1 border rounded">1</button>
+                                                        <button class="px-2 py-1 border rounded">2</button>
+                                                        <button class="px-2 py-1 border rounded">3</button>
+                                                        <button class="px-2 py-1 border rounded">>></button>
+                                                    </div>
+                                                </div>                       
+                                            </div>
+                    
+                            </div>
+                    
+                        </div>
+                        
+                     </div>
+
+                     
+                                                 <!-- Formulas Section -->
+
+                     <div class="container mx-auto p-4">
+                        <h1 class="text-center text-2xl font-semibold text-gray-600">Acceso rápido</h1>
+                        <p class="text-center text-sm text-gray-500 mb-6">Muestra el Top 5 de los elementos editados recientemente</p>
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                                <div class="bg-white rounded-lg shadow p-4 ">
+                                    <div class="flex items-center mb-4">
+                                        <div class="w-4 h-4 bg-gray-400 rounded-full mr-2"></div>
+                        
+                                        <h2 class="text-lg font-bold">Formulas</h2>
+                                    </div>
+                                            <div class="space-y-1">
+                                                
+                                                <div class="rounded-lg border border-grey-500 p-4 mb-4 ">
+                                                    <div class="flex justify-between items-center mb-2">
+                                                        <p class="font-bold">#00024</p>
+                                                        <p class=" font-bold text-blue-500">Valor: $200.000</p>     
+                                                    </div>
+        
+                                                    <div class="flex justify-between ">
+                                                        <p class="text-sm font-bold">DEIMER ANDRÉS NÚÑEZ NOVOA</p>
+                                                        <i class="fas fa-play text-gray-500"></i>
+                                                    </div>
+                                                    <p class=" text-gray-500">Fecha:24/03/2024</p>              
+                                                </div>
+                        
+                                                <div class="rounded-lg border border-grey-500 p-4 mb-4">
+                                                    <div class="flex justify-between items-center mb-2">
+                                                        <p class="text-sm font-bold">#00024</p>
+                                                        <p class="text-sm font-bold text-blue-500">Valor: $200.000</p>
+                                                    </div>
+                                                         
+                                                    <div class=" flex justify-between">
+                                                        <p class="text-sm font-bold">JAMES ZÚÑIGA ZÚÑIGA</p>
+                                                        <i class="fas fa-play text-gray-500"></i>
+                                                    </div>
+                                                    <p class=" text-gray-500">Fecha:24/03/2024</p>  
+                                                </div>
+        
+                                            </div>
+        
+                                            <div class="flex justify-center mt-20">
+                                                <div class="mt-20">
+                                                    <button class="px-2 py-1 border rounded"><<</button>
+                                                    <button class="px-2 py-1 border rounded">1</button>
+                                                    <button class="px-2 py-1 border rounded">2</button>
+                                                    <button class="px-2 py-1 border rounded">3</button>
+                                                    <button class="px-2 py-1 border rounded">>></button>
+                                                </div>
+                                            </div>                       
+                                        </div>
+                                        
+
+
+                                     <!-- Clientes Section -->
+
+                                     <div class="bg-white rounded-lg shadow p-4 ">
+                                        <div class="flex items-center mb-4">
+                                            <div class="w-4 h-4 bg-gray-400 rounded-full mr-2"></div>
+                            
+                                            <h2 class="text-gray-500 font-bold">Clientes</h2>
+                                        </div>
+
+                                                <div class="space-y-1">
+                                                    
+                                                  
+                                                    <div class="border rounded-lg p-4 flex justify-between items-center">
+
+                                                        <div>
+                                                            <p class="text-sm font-semibold text-gray-600">ARLEY TORDECILLA</p>
+                                                            <p class="text-sm text-gray-600">CC. 11111111110</p>
+                                                        </div>
+                                                        <i class="fas fa-mars text-gray-400"></i>
+                                                        <i class="fas fa-play text-gray-500"></i>
+                                                    </div>  
+            
+                                                        <div class="border rounded-lg p-4 flex justify-between items-center">
+                                                            <div>
+                                                                <p class="text-sm font-semibold text-gray-600">DEIMER ANDRÉS NÚÑEZ NOVOA</p>
+                                                                <p class="text-sm text-gray-600">CC. 1030904780</p>
+                                                            </div>
+                                                            <i class="fas fa-mars text-gray-400"></i>
+                                                            <i class="fas fa-play text-gray-500"></i>
+                                                        </div>
+            
+                                                        <div class="border rounded-lg p-4 flex justify-between items-center">
+                                                            <div>
+                                                                <p class="text-sm font-semibold text-gray-600">MARIA VERTEL VERTEL</p>
+                                                                <p class="text-sm text-gray-600">T.I. 5687898985</p>
+                                                            </div>
+                                                            <i class="fas fa-venus text-gray-400"></i>
+                                                            <i class="fas fa-play text-gray-500"></i>
+                                                        </div>
+            
+            
+                                                </div>
+            
+                                                <div class="flex justify-center mt-20">
+                                                    <div class="mt-20">
+                                                        <button class="px-2 py-1 border rounded"><<</button>
+                                                        <button class="px-2 py-1 border rounded">1</button>
+                                                        <button class="px-2 py-1 border rounded">2</button>
+                                                        <button class="px-2 py-1 border rounded">3</button>
+                                                        <button class="px-2 py-1 border rounded">>></button>
+                                                    </div>
+                                                </div>                       
+                                            </div>
+
+
+                                                 <!-- Productos Section -->
+
+                                                 <div class="bg-white rounded-lg shadow p-4 ">
+                                                    <div class="flex items-center mb-4">
+                                                        <div class="w-4 h-4 bg-gray-400 rounded-full mr-2"></div>
+                                        
+                                                        <h2 class="text-lg font-bold">Productos</h2>
+                                                    </div>
+                                                            <div class="space-y-1">
+                                                                
+                                                                <div class="rounded-lg border border-grey-500 p-4 mb-4 ">
+                                                                    <div class="flex justify-between items-center mb-2">
+                                                                        <p class="font-bold">#00050</p>
+                                                                        <p class=" text-sm font-bold text-purple-500">10</p>                                                                
+                                                                    </div>
+            
+                                                                    <div class="flex justify-between ">
+                                                                        <p class="text-sm font-bold">Lentes UV</p>
+                                                                        <i class="fas fa-play text-gray-500"></i>
+                                                                    </div>
+                                                                    <p class=" text-gray-500">Fecha:24/03/2024</p>              
+                                                                </div>
+                                        
+                                                                <div class="rounded-lg border border-grey-500 p-4 mb-4">
+                                                                    <div class="flex justify-between items-center mb-2">
+                                                                        <p class="text-sm font-bold">#00024</p>
+                                                                        <p class="text-sm font-bold text-purple-500">10</p>
+                                                                    </div>
+                                                                         
+                                                                    <div class=" flex justify-between">
+                                                                        <p class="text-sm font-bold">Monturas Roja</p>
+                                                                        <i class="fas fa-play text-gray-500"></i>
+                                                                    </div>
+                                                                    <p class=" text-gray-500">Fecha:24/03/2024</p>   
+                                                                </div>  
+                                                            </div>
+                        
+                                                            <div class="flex justify-center mt-20">
+                                                                <div class="mt-20">
+                                                                    <button class="px-2 py-1 border rounded"><<</button>
+                                                                    <button class="px-2 py-1 border rounded">1</button>
+                                                                    <button class="px-2 py-1 border rounded">2</button>
+                                                                    <button class="px-2 py-1 border rounded">3</button>
+                                                                    <button class="px-2 py-1 border rounded">>></button>
+                                                                </div>
+                                                            </div>                       
+                                                        </div>          
+
+                                                    </div>
+                                                </div>
+                                            </div>
+      
+                                        <!--VENTANA FLOTANTE  DE NUEVA FORMULA  -->
+
+            <div class="modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black  bg-opacity-50 hidden ">  
+
+                <div class=" bg-gray-100 p-1 mb-1 rounded-lg border border-grey-500 p-1  full fixed left-50 top-15">  
+                <div class="flex justify-between items-center mb-3">
+                   
+                    <h1 class="text-xl font-bold">Nueva formula</h1>
+                    <span class="text-xl font-bold absolute right-10">#00045</span>
+                    <div class=" absolute right-0 ">
+                        <button class="cerrar-monddal text-black">&cross;</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mb-2">
+                    <div>
+                        <label class=" font-bold block text-sm font-medium mb-0">Cliente</label>
+                        <input type="text" class="w-full border border-gray-300 rounded p-1">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-0">Fecha</label>
+                        <div class="relative">
+                            <input type="text" class="w-full border border-gray-300 rounded p-1" value="29/09/2024">
+                            <i class="fas fa-calendar-alt absolute right-1 top-2 text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-sm font-bold mb-1">Tipo Lente</label>
+                        <div class="flex items-center">
+                            <select class="w-full border border-gray-300 rounded py-1 mr-1">
+                                <option>Seleccione</option>
+                            </select>
+                            <button class="bg-green-500 text-white px-2 py-2 rounded">Agregar</button>
+                        </div>
+                        <div class="relative">
+                            <div class="flex items-center justify-between mb-1">
+                                <input type="text" class="w-full border-2  p-1 px-4 "value = "Progresivo">
+                                <button class="text-red-500"><i class="fas fa-minus-circle alt absolute right-1 top-2  "></i></button> 
+                               
+                            </div>
+                            <div class="relative">
+                                <input type="text" class="w-full border-2  p-1 px-4 "value = "Vidrio Blanco">
+                                <button class="text-red-500"><i class="fas fa-minus-circle alt absolute right-1 top-2  "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Diagnóstico</label>
+                        <div class="flex items-center">
+                            <select class="w-full border border-gray-300 rounded p-1 mr-1">
+                                <option>Seleccione</option>
+                            </select>
+                            <button class="bg-green-500 text-white px-2 py-2 rounded">Agregar</button>
+                        </div>
+                        <div class="mt-1">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="font-bold">OI_ESF </span>
+                                <input type="text" class="w-209 border-2  p-1 px-4 ml-10 "value = "No Aplica">
+                                <button class="bg-red-500 text-white px-2 py-1 rounded ">Eliminar</button>
+                                
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold"> ADD (Adición)</span>
+                                <input type="text" class="w-209 border border-gray-300 rounded p-1 px-4 relative right-0" value="200">
+                                <button class="bg-red-500 text-white px-2 py-1 rounded">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0 py-0">
+                    <label class="block text-sm font-medium mb-0">Descripción</label>
+                    <textarea class="w-full border border-gray-300 rounded p-1"></textarea>
+                </div>
+                <div class="bg-gray-100 py-1 rounded-lg">
+                    <h2 class="text-lg font-bold text-center">Facturación</h2>
+                    <div class="flex items-center mb-3">
+                        <button class="bg-blue-500 text-white px-1 py-1 rounded mr-1">+ Productucto</button>
+                        <button class="bg-green-500 text-white px-1 py-1 rounded mr-1">+ Reparación</button>
+                        <button class="bg-yellow-500 text-white px-1 py-1 rounded">+ Abono</button>
+                        <div class="absolute right-6">
+                            <label class="block text-sm font-medium mb-1">Valor Consulta</label>
+                            <input type="text" class="w-full border border-gray-300 rounded p-1" value="35.000">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap- mb-4">
+
+                        <div>
+                            <div class="flex justify-center">
+                                <span class="font-bold">MARCO CATERPILLER</span>
+                                <input type="text" value="120.000" class="border border-gray-300 rounded p-1 ml-6">
+                                <input type="number" value="2" class="w-12 border border-gray-300 rounded p-1 ml-2">
+                                <button class="text-red-500  flex items-center"><i class="fas fa-minus-circle ml-2"></i></button>
+                                <p class="absolute right-0">Total: $400.000</p>
+
+                            </div>
+                            <div class="flex justify-center">
+                                <span class="font-bold">REPARACION LENTES</span>
+                                <input type="text" class="border border-gray-300 rounded p-1 ml-6" value="35.000">
+                                <input type="number" value="1" class="w-12 border border-gray-300 rounded p-1 ml-2">
+                                <button class="text-red-500  justify-center"><i class="fas fa-minus-circle ml-2 "></i></button>
+                                <p class="absolute right-0">Total: $400.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="absolute right-0 ">
+                        <p class="font-bold">Total: $120.000</p>
+                        <p>Consulta: $35.000</p>
+                        <p>Productucto: $520.000</p>
+                        <p>Abono: $0</p>
+                        <p>Total: $555.000</p>
+                     
+                    </div>
+
+                    <div class="">
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded mb-12 mt-9">Confirmar Formula</button>
+                    </div>
+            </div>
+        </div>
+            
+            <script>
+               document.querySelector('.Abrir-modal').addEventListener('click', function() {
+                    document.querySelector('.modal').classList.remove('hidden');
+                });
+        
+                document.querySelectorAll('.cerrar-monddal').forEach(function(element) {
+                    element.addEventListener('click', function() {
+                        document.querySelector('.modal').classList.add('hidden');
+                    });
+                });
+
+            </script>                                  
+
+                         <!--VENTANA FLOTANTE  DE NUEVA COMPRA  -->
+                         <div class="modal_NuevaCompta  h-screen w-full fixed left-1 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h1 class="text-xl font-bold">Nueva Venta</h1>
+                                           
+                                            <span class="text-xl font-bold ">#00045</span>
+                                            <div>
+                                                <button class="cerrar-monddal text-black">&cross;</button>
+                                            </div>
+                                            
+                                        </div>
+                                        <hr class="mb-4">
+                                        <div class="grid grid-cols-2 gap-4 mb-9">
+                                            <div>
+                                                <label for="tipoPago" class="block text-sm font-medium text-gray-700">Tipo de Pago</label>
+                                                <select id="tipoPago" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                                    <option>Seleccione</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="cliente" class="block text-sm font-medium text-gray-700">Cliente</label>
+                                                <div class="mt-2 flex rounded-md shadow-sm">
+                                                    <input type="text" id="cliente" class="flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300">
+                                                    <span class="inline-flex items-center px-2 rounded-r-md border border-4- border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex space-x-2 mb-1">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded">+ Productucto</button>
+                                            <button class="bg-green-200 text-black px-4 py-2 rounded">+ Reparación</button>
+                                            <button class="bg-blue-200 text-black px-4 py-2 rounded">+ Abono</button>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="flex items-center justify-between mb-2">
+                                                <span>MARCO CATERPILLER</span>
+                                                <div class="flex items-center space-x-2">
+                                                    <input type="text" value="200.000" class="w-20 text-center border border-gray-300 rounded">
+                                                    <input type="text" value="2" class="w-10 text-center border border-gray-300 rounded">
+                                                    <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                                                    <p>Total: $120.000</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center justify-between mb-2">
+                                                <span>REPACIÓN LENTES</span>
+                                                <div class="flex items-center space-x-3">
+                                                    <input type="text" value="120.000" class="w-20 text-center border border-gray-300 rounded">
+                                                    <input type="text" value="1" class="w-10 text-center border border-gray-300 rounded">
+                                                    <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                                                    <p>Total: $400.000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-right mb-4">
+                                          
+                                            
+                                            <p>Consulta: $35.000</p>
+                                            <p>Productos: $520.000</p>
+                                            <p>Abono: $0</p>
+                                            <p class="font-bold">Total: $555.000</p>
+                                        </div>
+                                        <div class="flex space-x-2">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded">Confirmar Venta</button>
+                                            <button class="bg-blue-200 text-black px-4 py-2 rounded">Imprimir Factura</button>
+                                        </div>
+                                    </div>
+                               
+                         </div> 
+
+                         <script>
+                           document.querySelector('.Clientes_modal').addEventListener('click', function() {
+                    document.querySelector('.modal_NuevaCompta').classList.remove('hidden');
+                });
+        
+                document.querySelectorAll('.cerrar-monddal').forEach(function(element) {
+                    element.addEventListener('click', function() {
+                        document.querySelector('.modal_NuevaCompta').classList.add('hidden');
+                    });
+                });
+                         </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+  
+
+
+   
+ 

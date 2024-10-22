@@ -1,0 +1,99 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="index.js">
+</head>
+<body class="bg-gray-100 p-8">
+   
+    <!DOCTYPE html>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <title>Menú de Registro Lateral con Tailwind</title>
+    </head>
+    <body class="flex">
+    
+        <!-- Botón para abrir el menú -->
+        <button id="menu-toggle" class="p-4 bg-blue-500 text-white rounded">Abrir Registro</button>
+    
+        <!-- Menú lateral de registro (ahora a la derecha) -->
+        <div id="sidebar" class="fixed inset-y-0 right-0 transform translate-x-full transition-transform duration-300 bg-gray-800 text-white w-80">
+            <div class="flex justify-center items-center h-screen bg-gray-100">
+                <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl text-blue-600">Crear Cliente</h2>
+                        <i class="fas fa-times cursor-pointer"></i>
+                    </div>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Nombres</label>
+                            <input type="text" placeholder="Nombres" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Apellidos</label>
+                            <input type="text" placeholder="Apellidos" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Tipo de identificación</label>
+                            <select class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Seleccione</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Número de identificación</label>
+                            <input type="text" placeholder="Identificación" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Celular</label>
+                            <input type="text" placeholder="Celular" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Teléfono</label>
+                            <input type="text" placeholder="Teléfono" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Dirección</label>
+                            <input type="text" placeholder="Dirección" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Email</label>
+                            <input type="email" placeholder="Email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Crear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flex-1 p-4">
+            <h1 class="text-2xl">Contenido Principal</h1>
+            <p>Aquí va el contenido de la página.</p>
+        </div>
+    
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+    
+            menuToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('translate-x-full');
+            });
+    
+            // Manejo del formulario de registro
+            document.getElementById('registration-form').addEventListener('submit', (event) => {
+                event.preventDefault();
+                // Aquí puedes manejar el registro, como enviar los datos a un servidor
+                alert('Registro exitoso');
+                sidebar.classList.add('translate-x-full'); // Cerrar el menú después del registro
+            });
+        </script>
+    </body>
+    </html>
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devi <link rel="stylesheet" href="index.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <title>Pgina Principal</title>
+</head>
+<body>
+    <div class="flex items-center justify-between p-4 border-b">
+
+        <div class="flex items-center">
+            <img alt="Optica Kenedy logo" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg" width="50"/>
+            <span class="ml-2 text-gray-700">
+             Optica Kenedy
+            </span>
+           </div>
+
+
+        <div class="flex items-center">
+            <img alt="User profile picture" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg" width="50"/>
+           
+           </div>
+    </div>
+
+    <!-- container -->
+    <div class="flex">
+        <div class="w-1/8 bg-white h-screen p-4">
+            <div class="space-y-2">
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-blue-200 rounded-full border border-blue-400"></div>
+                    <p class="mt-1"><a href="/indexPrincipla.html">Inicio</a></p>
+                </div>
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1"><a href="/Clientes/indexClientes.html">Clientes</a></p>
+                </div>
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1 ">Proveedores</p>
+                </div>
+
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1">Formulas</p>
+                </div>
+                
+                <div class="flex flex-col items-center border rounded-lg p-1">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    <p class="mt-1">Configuraciones</p>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="w-5/6 p-4">
+            <div class="flex space-x-4 mb-4">
+                <button  id="NuevoCliente" class=" bg-blue-500 text-white px-4 py-2 rounded font-bold">+Nuevo Producto</button>
+            </div>
+                        <!-- TABLA De PRODUCTOS -->
+       <div class="bg-gray-100 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">       
+                <div class="mb-2">
+                    <div class="relative">
+                        <div class="">
+                            <input type="text" placeholder="Buscar Producto" class="p-2 pl-10 border-blue-400 rounded">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                        </div>
+                    </div>
+
+                    <table class=" w-full border-collapse border bg-white p-1 rounded shadow">
+                        <thead>
+                            <tr>
+                                <th class="border p-2 ">N Producto</th>
+                                <th class="border p-1">Codigo de barra</th>
+                                <th class="border p-2">Referecia Muntura</th>
+                                <th class=" border p-2">Marca / Modelo</th>
+                                <th class="border p-2">Categoria</th>
+                                <th class="border p-2">Prefio de costo</th>
+                                <th class="border p-2">Precio de venta</th>
+                                <th class="border p-2">Existecia</th>
+                                <th class="border p-2">Opcion</th>
+                            </tr>
+                        </thead>
+                    </table>

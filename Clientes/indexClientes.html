@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devi <link rel="stylesheet" href="index.js">
+    <meta name="viewport" content="width=devi <link rel=" stylesheet" href="index.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="index.js">
     <link rel="stylesheet" href="styles.css">
-    
-    
+
+
     <title>Pgina Principal</title>
 </head>
+
 <body>
     <div class="flex items-center justify-between p-4 border-b">
 
         <div class="flex items-center">
-            <img alt="Optica Kenedy logo" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg" width="50"/>
+            <img alt="Optica Kenedy logo" class="rounded-full" height="50"
+                src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg"
+                width="50" />
             <span class="ml-2 text-gray-700">
-             Optica Kenedy
+                Optica Kenedy
             </span>
-           </div>
+        </div>
 
 
         <div class="flex items-center">
-            <img alt="User profile picture" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg" width="50"/>
-           </div>
+            <img alt="User profile picture" class="rounded-full" height="50"
+                src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg"
+                width="50" />
+        </div>
     </div>
 
     <!-- container -->
@@ -32,27 +38,27 @@
         <div class="w-1/6 bg-white h-screen p-4">
             <div class="space-y-2">
                 <div class="flex flex-col items-center rounded-lg p-1">
-                    <img class="w-12 h-12" src="/iconos/casa-icono-silueta.png" alt="Inicio">
+                    <a href="/indexPrincipla.html"> <img class="w-12 h-12" src="/iconos/casa-icono-silueta.png" alt="Inicio"></a>
                     <p class="text-center font-bold h-10 mt-1"><a href="/indexPrincipla.html">Inicio</a></p>
                 </div>
                 <div class="flex flex-col items-center rounded-lg p-1">
-                    <img class="w-12 " src="/iconos/nueva-cuenta.png" alt="">
+                    <a href="/Clientes/indexClientes.html"><img class="w-12 " src="/iconos/nueva-cuenta.png" alt=""></a>
                     <p class="mt-1 font-bold"><a href="/Clientes/indexClientes.html">Clientes</a></p>
                 </div>
                 <div class="flex flex-col items-center  p-1">
-                    <img class="w-12" src="/iconos/personas.png" alt="">
+                    <a href="/Proveedores/proveedores.html"><img class="w-12" src="/iconos/personas.png" alt=""></a>
                     <p class="mt-1 font-bold"><a href="/Proveedores/proveedores.html">Proveedores</a></p>
                 </div>
                 <div class="flex flex-col items-center p-1">
-                    <img class="w-12" src="/iconos/orden.png" alt="">
+                    <a href="/Productos/Productos.html"> <img class="w-12" src="/iconos/orden.png" alt=""></a>
                     <p class="mt-1 font-bold"><a href="/Productos/Productos.html">Productos</a></p>
                 </div>
                 <div class="flex flex-col items-center p-1">
-                    <img class="w-12" src="/iconos/computadora-portatil.png" alt="">
-                    <p class="mt-1 font-bold">Fórmulas</p>
+                    <a href="/Fomulas/FormulaIndex.html"><img class="w-12" src="/iconos/computadora-portatil.png" alt="Foto"></a>
+                    <p class="mt-1 font-bold"><a href="/Fomulas/FormulaIndex.html">Fórmulas</a></p>
                 </div>
                 <div class="flex flex-col items-center p-1">
-                    <img class="w-12" src="/iconos/configuraciones-de-la-cuenta.png" alt="">
+                    <a href=""><img class="w-12" src="/iconos/configuraciones-de-la-cuenta.png" alt=""></a>
                     <p class="mt-1 font-bold">Configuraciones</p>
                 </div>
             </div>
@@ -60,19 +66,20 @@
 
         <div class="w-5/6 p-4">
             <div class="flex space-x-4 mb-4">
-                <button  id="NuevoCliente" class=" bg-blue-500 text-white px-4 py-2 rounded font-bold">+Nuevo Clientes</button>
+                <button id="NuevoCliente" class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">+Nuevo
+                    Clientes</button>
             </div>
-                        <!-- TABLA DE CLIENTES -->
-       <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">       
+            <!-- TABLA DE CLIENTES -->
+            <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
                 <div class="mb-2">
                     <div class="relative">
                         <div class="inline-flex">
                             <input type="text" placeholder="Buscar Cliente" class="p-2 pl-10 border-blue-400 rounded">
                             <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                            <button class="font-bold border p-2 bg-blue-500 px-4 py-2 rounded ">Buscar</button>
+                            <button class="text-white font-bold border hover:bg-blue-700 p-2 bg-blue-500 px-4 py-2 rounded ">Buscar</button>
                         </div>
                     </div>
-                    
+
                 </div>
                 <table class="w-full border-collapse border bg-white p-1 rounded shadow">
                     <thead>
@@ -87,86 +94,81 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border p-5 flex items-center">
-                                <i class="text-blue-600 fas fa-mars text-lg mr-8 bg-blue-"></i>
-                               <p class="">DEIMER ANDRÉS NÚÑEZ NOVOA</p> 
-                            </td>
-                            <td class="border px-1">
-                                103909780
-                                <br>
-                                <span class="text-sm text-gray-500">Cedula de ciudadanía</span>
-                            </td>
-                            <td class="border p-2">
-                                3117139105
-                                <br>
-                                3216563598
-                            </td>
-                            <td class="border p-1">NECOCLÍ, CL 59 N 48 - 49</td>
-                            <td class="border p-1">deandre@yopmail.com</td>
-                            <td class="border p-5 flex justify-center">
+                            <td class="border border-gray-300 p-2 "><i
+                                    class="text-blue-600 fas fa-mars text-lg mr-8 bg-blue-"></i>
+                                DEIMER ANDRES NOVOA NOVOA</td>
+                            <td class="border border-gray-300 p-2 text-center">2480293473</td>
+                            <td class="border border-gray-300 p-2 text-center">3227133105 <br> 3227133105</td>
+                            <td class="border border-gray-300 p-2 text-center">NECOCLI - 35 PI 9</td>
+                            <td class="border border-gray-300 p-2 text-center">deimeryopmail.com</td>
+                            <td class="border border-gray-300 p-2 text-center">
                                 <button class="text-blue-500 mr-10">
-                                    <i class="fas fa-play "></i>
+                                    <i class="fas fa-play"></i>
                                 </button>
                                 <button class="text-red-500">
-                                    <i class="fas fa-trash 7"></i>
+                                    <i class="fas fa-minus-circle ml-2"></i>
                                 </button>
                             </td>
                         </tr>
                         <tr>
-                            <td class="border p-2 flex items-center">
-                                <i class="text-blue-600 fas fa-mars text-lg mr-10"></i>
-                                ARLEY TORDECILLA
-                            </td>
-                            <td class="border p-2"></td>
-                            <td class="border p-2"></td>
-                            <td class="border p-2"></td>
-                            <td class="border p-2"></td>
-                            <td class="border p-3 flex justify-center">
-                                <button class="text-blue-500 mr-10 p-0">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                                <button class="text-red-500">
-                                    <i class="fas fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
                         <tr>
-                            <td class="border p-1 flex items-center">
-                                <i class="text-pink-400 fas fa-venus text-lg mr-10 p-1"></i>
-                                MARIA VERTEL VERTEL
-                            </td>
-                            <td class="border p-2"></td>
-                            <td class="border p-2"></td>
-                            <td class="border p-2"></td>
-                            <td class="border p-2"></td>
-                            <td class="border p-2 flex justify-center">
-                                <button class="text-blue-500 mr-10 p-1">
+                            <td class="border border-gray-300 p-2 "><i
+                                    class="text-blue-600 fas fa-mars text-lg mr-8 bg-blue-"></i>
+                                ARLEY TORDECILLA</td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"> <button class="text-blue-500 mr-10">
                                     <i class="fas fa-play"></i>
                                 </button>
                                 <button class="text-red-500">
-                                    <i class="fas fa-trash" id="botn_eliminar"></i>
+                                    <i class="fas fa-minus-circle ml-2"></i>
                                 </button>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td class="border border-gray-300 p-2 "> <i
+                                    class="text-pink-500 fas fa-mars text-lg mr-8 bg-blue-"></i>
+                                MARIA VERTEL VERTEL</td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"> <button class="text-blue-500 mr-10">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="text-red-500">
+                                    <i class="fas fa-minus-circle ml-2"></i>
+                                </button>
+                            </td>
+                        </tr>
+
                     </tbody>
                 </table>
+
+
+
+
                 <div class="mt-4 flex justify-center">
                     <nav class="inline-flex rounded-md shadow">
-                        <a href="#" class="px-4 py-2 bg-blue-500 text-white border border-gray-300">1</a>
-                        <a href="#" class="px-4 py-2 bg-white text-blue-500 border border-gray-300">2</a>
-                        <a href="#" class="px-4 py-2 bg-white text-blue-500 border border-gray-300">3</a>
+                        <a href="#" class="px-4 py-2 bg-white hover:bg-blue-500  border border-gray-300">1</a>
+                        <a href="#" class="px-4 py-2 bg-white hover:bg-blue-500  border border-gray-300">2</a>
+                        <a href="#" class="px-4 py-2 bg-white hover:bg-blue-500 border border-gray-300">3</a>
                     </nav>
                 </div>
-           
-           </div>
-        </div>
-        </div>
 
-        
-                                        <!-- VENTANA DE NUEVO CLIENTE -->
- 
- 
-    <div id="sidebar" class="fixed inset-y-3 right-0 transform translate-x-full transition-transform duration-300 bg-gray-800 text-black-500 w-80">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- VENTANA DE NUEVO CLIENTE -->
+
+
+    <div id="sidebar"
+        class="fixed inset-y-3 right-0 transform translate-x-full transition-transform duration-300 bg-gray-800 text-black-500 w-80">
         <div class="flex justify-center items-center h-screen bg-gray-50">
             <div class="bg-white p-6 rounded-lg shadow-lg w-96">
                 <div class="flex justify-between items-center mb-4">
@@ -176,40 +178,49 @@
                 <form id="registration-form">
                     <div class="mb-4">
                         <label class="block text-gray-700">Nombres</label>
-                        <input type="text" placeholder="Nombres" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Nombres"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Apellidos</label>
-                        <input type="text" placeholder="Apellidos" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Apellidos"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Tipo de identificación</label>
-                        <select class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <select
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             <option>Seleccione</option>
                         </select>
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Número de identificación</label>
-                        <input type="text" placeholder="Identificación" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Identificación"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Celular</label>
-                        <input type="text" placeholder="Celular" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Celular"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Teléfono</label>
-                        <input type="text" placeholder="Teléfono" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Teléfono"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Dirección</label>
-                        <input type="text" placeholder="Dirección" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Dirección"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Email</label>
-                        <input type="email" placeholder="Email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="email" placeholder="Email"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div>
-                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Crear</button>
+                        <button type="submit"
+                            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Crear</button>
                     </div>
                 </form>
             </div>
@@ -237,4 +248,5 @@
     </script>
 
 </body>
+
 </html>

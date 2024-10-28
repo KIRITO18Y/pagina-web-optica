@@ -1,193 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devi <link rel="stylesheet" href="index.js">
+    <meta name="viewport" content="width=devi <link rel=" stylesheet" href="index.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="index.js">
     <link rel="stylesheet" href="styles.css">
-    
-    
+
+
     <title>Pgina Principal</title>
 </head>
+
 <body>
     <div class="flex items-center justify-between p-4 border-b">
 
         <div class="flex items-center">
-            <img alt="Optica Kenedy logo" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg" width="50"/>
+            <img alt="Optica Kenedy logo" class="rounded-full" height="50"
+                src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg"
+                width="50" />
             <span class="ml-2 text-gray-700">
-             Optica Kenedy
+                Optica Kenedy
             </span>
-           </div>
+        </div>
 
 
         <div class="flex items-center">
-            <img alt="User profile picture" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg" width="50"/>
-           
-           </div>
+            <img alt="User profile picture" class="rounded-full" height="50"
+                src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg"
+                width="50" />
+
+        </div>
     </div>
 
-    <!-- container -->
+    <!-- CONTAINER  -->
     <div class="flex">
+        <!-- Encelas  -->
         <div class="w-1/6 bg-white h-screen p-4">
             <div class="space-y-2">
                 <div class="flex flex-col items-center rounded-lg p-1">
-                    <img class="w-12 h-12" src="/iconos/casa-icono-silueta.png" alt="Inicio">
+                    <a href="/indexPrincipla.html"> <img class="w-12 h-12" src="/iconos/casa-icono-silueta.png"
+                            alt="Inicio"></a>
                     <p class="text-center font-bold h-10 mt-1"><a href="/indexPrincipla.html">Inicio</a></p>
                 </div>
                 <div class="flex flex-col items-center rounded-lg p-1">
-                    <img class="w-12 " src="/iconos/nueva-cuenta.png" alt="">
+                    <a href="/Clientes/indexClientes.html"><img class="w-12 " src="/iconos/nueva-cuenta.png" alt=""></a>
                     <p class="mt-1 font-bold"><a href="/Clientes/indexClientes.html">Clientes</a></p>
                 </div>
                 <div class="flex flex-col items-center  p-1">
-                    <img class="w-12" src="/iconos/personas.png" alt="">
+                    <a href="/Proveedores/proveedores.html"><img class="w-12" src="/iconos/personas.png" alt=""></a>
                     <p class="mt-1 font-bold"><a href="/Proveedores/proveedores.html">Proveedores</a></p>
                 </div>
                 <div class="flex flex-col items-center p-1">
-                    <img class="w-12" src="/iconos/orden.png" alt="">
+                    <a href="/Productos/Productos.html"> <img class="w-12" src="/iconos/orden.png" alt=""></a>
                     <p class="mt-1 font-bold"><a href="/Productos/Productos.html">Productos</a></p>
                 </div>
                 <div class="flex flex-col items-center p-1">
-                    <img class="w-12" src="/iconos/computadora-portatil.png" alt="">
-                    <p class="mt-1 font-bold">Fórmulas</p>
+                    <a href="/Fomulas/FormulaIndex.html"><img class="w-12" src="/iconos/computadora-portatil.png"
+                            alt="Foto"></a>
+                    <p class="mt-1 font-bold"><a href="/Fomulas/FormulaIndex.html">Fórmulas</a></p>
                 </div>
                 <div class="flex flex-col items-center p-1">
-                    <img class="w-12" src="/iconos/configuraciones-de-la-cuenta.png" alt="">
+                    <a href=""><img class="w-12" src="/iconos/configuraciones-de-la-cuenta.png" alt=""></a>
+
                     <p class="mt-1 font-bold">Configuraciones</p>
                 </div>
             </div>
         </div>
 
-        
+
         <div class="w-5/6 p-4">
             <div class="flex space-x-4 mb-4">
-                <button  id="NuevoCliente" class=" bg-blue-500 text-white px-4 py-2 rounded font-bold">+Nuevo Producto</button>
+                <button id="NuevoCliente" class=" bg-blue-500 text-white px-4 py-2 rounded font-bold">+Nuevo
+                    Producto</button>
             </div>
-                       
-       <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">       
+
+            <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
                 <div class="mb-2">
                     <div class="relative">
-                        <div class="">
-                            <input type="text" placeholder="Buscar Producto" class="p-2 pl-10 border-blue-400 rounded">
-                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>  
-                             
+                        <div class=" inline-flex">
+                            <input type="text" placeholder="Buscar Proveedor" class="p-2 pl-10 border-blue-400 rounded">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                            <button
+                                class="font-bold border p-2 bg-blue-500 px-4 py-2 rounded text-white ">Buscar</button>
                         </div>
-                                     <!--TABLA DE PRUDUCTOS-->
-                                     <table class="min-w-full bg-white border border-gray-300">
-                                        <thead>
-                                            <tr>
-                                                <th class="border border-gray-300 p-2">N° Producto</th>
-                                                <th class="border border-gray-300 p-2">Código de barra</th>
-                                                <th class="border border-gray-300 p-2">Nombre</th>
-                                                <th class="border border-gray-300 p-2">Referencia Montura</th>
-                                                <th class="border border-gray-300 p-2">Marca / Modelo</th>
-                                                <th class="border border-gray-300 p-2">Categoría</th>
-                                                <th class="border border-gray-300 p-2">Precio de Costo</th>
-                                                <th class="border border-gray-300 p-2">precio de venta</th>
-                                                <th class="border border-gray-300 p-2">Existencias</th>
-                                                <th class="border border-gray-300 p-2">Opciones</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="border border-gray-300 p-2 text-center">1</td>
-                                                <td class="border border-gray-300 p-2 text-center">2480293473</td>
-                                                <td class="border border-gray-300 p-2 text-center">Gafa formulada L+ unisex</td>
-                                                <td class="border border-gray-300 p-2 text-center">JB325</td>
-                                                <td class="border border-gray-300 p-2 text-center">Jack Becker</td>
-                                                <td class="border border-gray-300 p-2 text-center">Gafas</td>
-                                                <td class="border border-gray-300 p-2 text-center">230.000</td>
-                                                <td class="border border-gray-300 p-2 text-center">320.000</td>
-                                                <td class="border border-gray-300 p-2 text-center">3</td>
-                                                <td class="border border-gray-300 p-1 text-center">
-                                                    <i class="fas fa-play text-blue-500 cursor-pointer ml-0"></i>
-                                                    <i class="fas fa-edit text-blue-500 cursor-pointer ml-1"></i>
-                                                    <i class="fas fa-trash text-red-500 cursor-pointer ml-2"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 p-2 text-center">2</td>
-                                                <td class="border border-gray-300 p-2 text-center">2480293484</td>
-                                                <td class="border border-gray-300 p-2 text-center">Gafa unisex RB</td>
-                                                <td class="border border-gray-300 p-2 text-center">RB2185</td>
-                                                <td class="border border-gray-300 p-2 text-center">Real black</td>
-                                                <td class="border border-gray-300 p-2 text-center">Gafas</td>
-                                                <td class="border border-gray-300 p-2 text-center">150.000</td>
-                                                <td class="border border-gray-300 p-2 text-center">210.000</td>
-                                                <td class="border border-gray-300 p-2 text-center">20</td>
-                                                <td class="border border-gray-300 p-2 text-center">
-                                                    <i class="fas fa-play text-blue-500 cursor-pointer ml-0"></i>
-                                                    <i class="fas fa-edit text-blue-500 cursor-pointer ml-1"></i>
-                                                    <i class="fas fa-trash text-red-500 cursor-pointer ml-2"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 p-2 text-center">3</td>
-                                                <td class="border border-gray-300 p-2 text-center">2480293495</td>
-                                                <td class="border border-gray-300 p-2 text-center">Gafa formulada traslúcida unisex</td>
-                                                <td class="border border-gray-300 p-2 text-center">ORX2155</td>
-                                                <td class="border border-gray-300 p-2 text-center">Orion</td>
-                                                <td class="border border-gray-300 p-2 text-center">Gafas</td>
-                                                <td class="border border-gray-300 p-2 text-center">465.000</td>
-                                                <td class="border border-gray-300 p-2 text-center">699.000</td>
-                                                <td class="border border-gray-300 p-2 text-center">6</td>
-                                                <td class="border border-gray-300 p-2 text-center">
-                                                    <i class="fas fa-play text-blue-500 cursor-pointer ml-0"></i>
-                                                    <i class="fas fa-edit text-blue-500 cursor-pointer ml-1"></i>
-                                                    <i class="fas fa-trash text-red-500 cursor-pointer ml-2"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                                <td class="border border-gray-300 p-2 text-center"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="flex justify-center mt-4">
-                                        <nav class="inline-flex">
-                                            <a href="#" class="px-3 py-1 border border-gray-300 bg-white text-gray-700">1</a>
-                                            <a href="#" class="px-3 py-1 border border-gray-300 bg-white text-gray-700">2</a>
-                                            <a href="#" class="px-3 py-1 border border-gray-300 bg-white text-gray-700">3</a>
-                                        </nav>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
 
-                                     
-  </body>
-  </html>
-                
+                    </div>
+                </div>
+                <!--TABLA DE PRUDUCTOS-->
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 p-2">N° Producto</th>
+                            <th class="border border-gray-300 p-2">Código de barra</th>
+                            <th class="border border-gray-300 p-2">Nombre</th>
+                            <th class="border border-gray-300 p-2">Referencia Montura</th>
+                            <th class="border border-gray-300 p-2">Marca / Modelo</th>
+                            <th class="border border-gray-300 p-2">Categoría</th>
+                            <th class="border border-gray-300 p-2">Precio de Costo</th>
+                            <th class="border border-gray-300 p-2">precio de venta</th>
+                            <th class="border border-gray-300 p-2">Existencias</th>
+                            <th class="border border-gray-300 p-2">Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center">1</td>
+                            <td class="border border-gray-300 p-2 text-center">2480293473</td>
+                            <td class="border border-gray-300 p-2 text-center">Gafa formulada L+ unisex</td>
+                            <td class="border border-gray-300 p-2 text-center">JB325</td>
+                            <td class="border border-gray-300 p-2 text-center">Jack Becker</td>
+                            <td class="border border-gray-300 p-2 text-center">Gafas</td>
+                            <td class="border border-gray-300 p-2 text-center">230.000</td>
+                            <td class="border border-gray-300 p-2 text-center">320.000</td>
+                            <td class="border border-gray-300 p-2 text-center">3</td>
+                            <td class="border border-gray-300 p-1 text-center">
+                                <i class="fas fa-play text-blue-500 cursor-pointer ml-0"></i>
+                                <i class="fas fa-edit text-blue-500 cursor-pointer ml-1"></i>
+                                <i class="fas fa-trash text-red-500 cursor-pointer ml-2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center">2</td>
+                            <td class="border border-gray-300 p-2 text-center">2480293484</td>
+                            <td class="border border-gray-300 p-2 text-center">Gafa unisex RB</td>
+                            <td class="border border-gray-300 p-2 text-center">RB2185</td>
+                            <td class="border border-gray-300 p-2 text-center">Real black</td>
+                            <td class="border border-gray-300 p-2 text-center">Gafas</td>
+                            <td class="border border-gray-300 p-2 text-center">150.000</td>
+                            <td class="border border-gray-300 p-2 text-center">210.000</td>
+                            <td class="border border-gray-300 p-2 text-center">20</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <i class="fas fa-play text-blue-500 cursor-pointer ml-0"></i>
+                                <i class="fas fa-edit text-blue-500 cursor-pointer ml-1"></i>
+                                <i class="fas fa-trash text-red-500 cursor-pointer ml-2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center">3</td>
+                            <td class="border border-gray-300 p-2 text-center">2480293495</td>
+                            <td class="border border-gray-300 p-2 text-center">Gafa formulada traslúcida unisex</td>
+                            <td class="border border-gray-300 p-2 text-center">ORX2155</td>
+                            <td class="border border-gray-300 p-2 text-center">Orion</td>
+                            <td class="border border-gray-300 p-2 text-center">Gafas</td>
+                            <td class="border border-gray-300 p-2 text-center">465.000</td>
+                            <td class="border border-gray-300 p-2 text-center">699.000</td>
+                            <td class="border border-gray-300 p-2 text-center">6</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <i class="fas fa-play text-blue-500 cursor-pointer ml-0"></i>
+                                <i class="fas fa-edit text-blue-500 cursor-pointer ml-1"></i>
+                                <i class="fas fa-trash text-red-500 cursor-pointer ml-2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                            <td class="border border-gray-300 p-2 text-center"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="flex justify-center mt-4">
+                    <nav class="inline-flex">
+                        <a href="#" class="hover:bg-blue-500 px-3 py-1 border border-gray-300 bg-white text-gray-700">1</a>
+                        <a href="#" class="hover:bg-blue-500 px-3 py-1 border border-gray-300 bg-white text-gray-700">2</a>
+                        <a href="#" class="hover:bg-blue-500 px-3 py-1 border border-gray-300 bg-white text-gray-700">3</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

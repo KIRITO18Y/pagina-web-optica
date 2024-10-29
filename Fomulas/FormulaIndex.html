@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devi <link rel=" stylesheet" href="index.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <title>Pagina Principal</title>
+    <title>Fomulas</title>
 </head>
 
 <body>
@@ -58,19 +55,90 @@
             </div>
         </div>
 
-        <!-- Main Container -->
+
         <div class="w-5/6 p-4">
+            <div class="flex space-x-4 mb-4">
+                <button id="nuevoProveedor"
+                    class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">+Nuevo Formula
+                </button>
+            </div>
 
-            <!-- Main Container -->
+            <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 mb-4  ">
+                <div class="mb-2">
+                    <div class="relative">
+                        <div class="inline-flex">
+                            <input type="text" placeholder="Buscar Fomula" class="p-2 pl-10 border-blue-400 rounded">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                            <button
+                                class="font-bold border p-2 bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded text-white ">Buscar</button>
+                        </div>
+                    </div>
 
-            <div class="w-5/6 p-4">
-                <div class="flex space-x-4 mb-4">
+                </div>
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 p-2">#</th>
+                            <th class="border border-gray-300 p-2">Cliente</th>
+                            <th class="border border-gray-300 p-2">Valor Consulta</th>
+                            <th class="border border-gray-300 p-2">Fecha</th>
+                            <th class="border border-gray-300 p-2">Estado</th>
+                            <th class="border border-gray-300 p-2">Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center">#0023</td>
+                            <td class="border border-gray-300 p-2 ">DEIMER ANDRES NUÑEZ NOVOA</td>
+                            <td class="border border-gray-300 p-2 text-center">$30.000</td>
+                            <td class="border border-gray-300 p-2 text-center">07/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center text-green-500">Entregado</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <button class="text-blue-500 mr-3"><i class="fas fa-play"></i></button>
+                                <button class="text-green-500 mr-3"><i class="fas fa-file-invoice-dollar"></i></button>
+                                <button class="text-blue-500 mr-3"><i class="fas fa-print"></i></button>
+                                <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center">#0024</td>
+                            <td class="border border-gray-300 p-2 ">JAMES BRAVO ZUÑIGA</td>
+                            <td class="border border-gray-300 p-2 text-center">$30.000</td>
+                            <td class="border border-gray-300 p-2 text-center">07/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center text-blue-500">En Producción</td>
+                            <td class="border border-gray-300 p-2 text-center">
 
 
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> + Nuevo
-                        Producto</button>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> + Nuevo
-                        Compra</button>
+                                <button class="text-blue-500 mr-3"><i class="fas fa-play"></i></button>
+                                <button class="text-green-500 mr-3"><i class="fas fa-file-invoice-dollar"></i></button>
+                                <button class="text-blue-500 mr-3"><i class="fas fa-print"></i></button>
+                                <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center">#0025</td>
+                            <td class="border border-gray-300 p-2 ">MARIA VERTEL VERTEL</td>
+                            <td class="border border-gray-300 p-2 text-center">$30.000</td>
+                            <td class="border border-gray-300 p-2 text-center">07/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center text-red-500">Cancelado</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <button class="text-blue-500 mr-3"><i class="fas fa-play"></i></button>
+                                <button class="text-green-500 mr-3"><i class="fas fa-file-invoice-dollar"></i></button>
+                                <button class="text-blue-500 mr-3"><i class="fas fa-print"></i></button>
+                                <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-4 flex justify-center">
+                    <nav class="inline-flex rounded-md shadow">
+                        <a href="#" class="px-4 py-2 bg-white hover:bg-blue-500  border border-gray-300">1</a>
+                        <a href="#" class="px-4 py-2 bg-white hover:bg-blue-500  border border-gray-300">2</a>
+                        <a href="#" class="px-4 py-2 bg-white hover:bg-blue-500 border border-gray-300">3</a>
+                    </nav>
                 </div>
 
             </div>
+        </div>

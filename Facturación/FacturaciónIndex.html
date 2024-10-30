@@ -34,9 +34,9 @@
     <!-- CONTAINER  -->
     <div class="flex">
         <!-- Encelas  -->
-        <div class="w-1/6 bg-white h-screen p-4">
+        <div class="w-1/6 bg-white h-screen p-4 ml-2 ">
             <div class="space-y-2">
-                <div class="flex flex-col items-center rounded-lg p-1">
+                <div class="flex flex-col items-center rounded-lg p-1 ml-2">
                     <a href="/indexPrincipla.html"> <img class="w-12 h-12" src="/iconos/casa-icono-silueta.png"
                             alt="Inicio"></a>
                     <p class="text-center font-bold h-10 mt-1"><a href="/indexPrincipla.html">Inicio</a></p>
@@ -71,22 +71,46 @@
 
 
         <div class="w-5/6 p-4">
-            <div class="flex space-x-4 mb-4">
-                <button id="NuevoCliente" class=" bg-blue-500 text-white px-4 py-2 rounded font-bold">+Nueva Factura</button>
-            </div>
-
-            <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
+            <div class="flex space-x-4 mb-2">
+                <button id="nuevaFactura" class=" bg-blue-500 text-white px-4 py-2 rounded font-bold">+Nueva Factura</button>
+            </div>             
+            <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4   ">
                 <div class="mb-2">
-                    <div class="relative">
-                        <div class=" inline-flex">
-                            <input type="text" placeholder="Buscar Proveedor" class="p-2 pl-10 border-blue-400 rounded">
-                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                            <button
-                                class="font-bold border p-2 bg-blue-500 px-4 py-2 rounded text-white ">Buscar</button>
+                             <!-- CONTAINER DE TABLA DE FACTURACION  -->
+                    <div class="max-w-8xl mx-auto bg-white p-6 rounded shadow mb-4 ">
+                        <div class="grid grid-cols-4 gap-4 mb-4">
+                            <div>
+                                <label for="invoice-number" class="block text-sm font-medium text-gray-700">Número de factura</label>
+                                <input type="text" id="invoice-number" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                            </div>
+                            <div>
+                                <label for="payment-status" class="block text-sm font-medium text-gray-700">Estado de pago</label>
+                                <select id="payment-status" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                                    <option>Todas las transacciones</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="clients" class="block text-sm font-medium text-gray-700">Clientes</label>
+                                <select id="clients" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                                    <option>Todos los Clientes</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="period" class="block text-sm font-medium text-gray-700">Periodo</label>
+                                <div class="relative mt-1">
+                                    <input type="text" id="period" class="block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                                    <i class="fas fa-calendar-alt absolute top-3 right-3 text-gray-500"></i>
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
+                        <div class="flex justify-end mb-4">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded shadow flex items-center">
+                                <i class="fas fa-search mr-2"></i> Buscar
+                            </button>
+                        </div>
                 </div>
+
+
                 <!--TABLA DE FACTURACIóN-->
                 <table class="min-w-full bg-white border border-gray-300">
                     <thead>
@@ -101,13 +125,15 @@
                             <th class="border border-gray-300 p-2">Opciones</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td class="border border-gray-300 p-2 text-center">0045</td>
                             <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                             <span class="bg-green-500 text-white px-2 py-1 rounded">Pago</span></td>
                             <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">09/08/2024</td>
                             <td class="border border-gray-300 p-2 text-center">Efectivo</td>
                             <td class="border border-gray-300 p-2 text-center">1.200.000</td>
                             <td class="border border-gray-300 p-2 text-center">
@@ -120,9 +146,27 @@
                         <tr>
                             <td class="border border-gray-300 p-2 text-center">0046</td>
                             <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
-                            <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <span class="bg-red-500 text-white px-2 py-1 rounded">Sin pagar</span></td>
+                            <td class="border border-gray-300 p-2 text-center">Colgafas</td>
+                            <td class="border border-gray-300 p-2 text-center">10/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">Creditos</td>
+                            <td class="border border-gray-300 p-2 text-center">8.534.000</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <button class="text-blue-500 mr-3"><i class="fas fa-play"></i></button>
+                                <button class="text-green-500 mr-3"><i class="fas fa-file-invoice-dollar"></i></button>
+                                <button class="text-blue-500 mr-3"><i class="fas fa-print"></i></button>
+                                <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2 text-center">0047</td>
+                            <td class="border border-gray-300 p-2 text-center">Venta</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <span class="bg-green-500 text-white px-2 py-1 rounded">pago</span></td>
+                            </td>
+                            <td class="border border-gray-300 p-2 text-center">Pedreo Mantinez</td>
+                            <td class="border border-gray-300 p-2 text-center">11/08/2024</td>
                             <td class="border border-gray-300 p-2 text-center">Efectivo</td>
                             <td class="border border-gray-300 p-2 text-center">1.200.000</td>
                             <td class="border border-gray-300 p-2 text-center">
@@ -133,11 +177,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-300 p-2 text-center">0045</td>
-                            <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
-                            <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">0048</td>
+                            <td class="border border-gray-300 p-2 text-center">Venta</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <span class="bg-green-500 text-white px-2 py-1 rounded">pago</span></td>
+                            </td>
+                            <td class="border border-gray-300 p-2 text-center">Jose Bravo</td>
+                            <td class="border border-gray-300 p-2 text-center">13/08/2024</td>
                             <td class="border border-gray-300 p-2 text-center">Efectivo</td>
                             <td class="border border-gray-300 p-2 text-center">1.200.000</td>
                             <td class="border border-gray-300 p-2 text-center">
@@ -148,11 +194,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-300 p-2 text-center">0045</td>
+                            <td class="border border-gray-300 p-2 text-center">0049</td>
                             <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
-                            <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <span class="bg-red-500 text-white px-2 py-1 rounded">Sin pagar</span></td>
+                            </td>
+                            <td class="border border-gray-300 p-2 text-center">Camila Medrano</td>
+                            <td class="border border-gray-300 p-2 text-center">14/08/2024</td>
                             <td class="border border-gray-300 p-2 text-center">Efectivo</td>
                             <td class="border border-gray-300 p-2 text-center">1.200.000</td>
                             <td class="border border-gray-300 p-2 text-center">
@@ -163,11 +211,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-300 p-2 text-center">0045</td>
-                            <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
-                            <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">0049</td>
+                            <td class="border border-gray-300 p-2 text-center">Venta</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <span class="bg-red-500 text-white px-2 py-1 rounded">Sin pagar</span></td>
+                            </td>
+                            <td class="border border-gray-300 p-2 text-center">Andrea Martinez</td>
+                            <td class="border border-gray-300 p-2 text-center">15/08/2024</td>
                             <td class="border border-gray-300 p-2 text-center">Efectivo</td>
                             <td class="border border-gray-300 p-2 text-center">1.200.000</td>
                             <td class="border border-gray-300 p-2 text-center">
@@ -178,11 +228,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-300 p-2 text-center">0045</td>
+                            <td class="border border-gray-300 p-2 text-center">0050</td>
                             <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
-                            <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">
+                                <span class="bg-green-500 text-white px-2 py-1 rounded">pago</span></td>
+                            </td>
+                            <td class="border border-gray-300 p-2 text-center">Maria Peña</td>
+                            <td class="border border-gray-300 p-2 text-center">/17/2024</td>
                             <td class="border border-gray-300 p-2 text-center">Efectivo</td>
                             <td class="border border-gray-300 p-2 text-center">1.200.000</td>
                             <td class="border border-gray-300 p-2 text-center">
@@ -193,26 +245,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-300 p-2 text-center">0045</td>
-                            <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
-                            <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
-                            <td class="border border-gray-300 p-2 text-center">Efectivo</td>
-                            <td class="border border-gray-300 p-2 text-center">1.200.000</td>
+                            <td class="border border-gray-300 p-2 text-center">0051</td>
+                            <td class="border border-gray-300 p-2 text-center">Formula</td>
                             <td class="border border-gray-300 p-2 text-center">
-                                <button class="text-blue-500 mr-3"><i class="fas fa-play"></i></button>
-                                <button class="text-green-500 mr-3"><i class="fas fa-file-invoice-dollar"></i></button>
-                                <button class="text-blue-500 mr-3"><i class="fas fa-print"></i></button>
-                                <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                                <span class="bg-green-500 text-white px-2 py-1 rounded">pago</span></td>
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 p-2 text-center">0045</td>
-                            <td class="border border-gray-300 p-2 text-center">Compra</td>
-                            <td class="border border-gray-300 p-2 text-center">Pago</td>
-                            <td class="border border-gray-300 p-2 text-center">Gafas el Imperio</td>
-                            <td class="border border-gray-300 p-2 text-center">30/08/2024</td>
+                            <td class="border border-gray-300 p-2 text-center">Cristina muños</td>
+                            <td class="border border-gray-300 p-2 text-center">20/08/2024</td>
                             <td class="border border-gray-300 p-2 text-center">Efectivo</td>
                             <td class="border border-gray-300 p-2 text-center">1.200.000</td>
                             <td class="border border-gray-300 p-2 text-center">
@@ -226,14 +265,14 @@
                        
                     </tbody>
                 </table>
-                <div class="flex justify-center mt-4">
-                   
-                </div>
 
+                <div class="flex justify-center mt-4">
+                    
             </div>
+
         </div>
     </div>
-
+</div>
 
 </body>
 </html>

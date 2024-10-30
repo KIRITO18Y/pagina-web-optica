@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <title>Pagina Principal</title>
-
     <script type="text/javascript" src="scripts/main.js"></script>
 </head>
-
 <body>
     <div id="header" class="flex items-center justify-between p-4 border-b" >
     
@@ -20,15 +16,12 @@
         <div id="menu" class="w-1/6 bg-white h-screen p-4"></div>
         <!-- Main Container -->
         <div class="w-5/6 p-4">
-
-            <!-- Main Container -->
-
+            <!-- BUTTOM -->
             <div class="w-5/6 p-4">
                 <div class="flex space-x-4 mb-4">
-
-                    <button class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold Abrir-modal"> +
+                    <button id="Abrir-modal" class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> +
                         Nueva Formula</button>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold Clientes_modal">
+                    <button id="ClientesModal" class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold ">
                         + Nuevo Cliente</button>
                     <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> + Nuevo
                         Producto</button>
@@ -38,10 +31,8 @@
 
                 <!-- Cards Section -->
                 <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
-
                     <div>
                         <div class="container mx-auto p-4">
-
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
                                 <!-- Formulas Section -->
@@ -53,7 +44,6 @@
                                         <h2 class="text-lg font-bold">Facturas por Cobrar</h2>
                                     </div>
                                     <div class="space-y-1">
-
                                         <div class="rounded-lg border border-red-500 p-4 mb-4 ">
                                             <div class="flex justify-between items-center mb-2">
                                                 <p class="font-bold">#00024</p>
@@ -66,22 +56,18 @@
                                             </div>
                                             <p class=" text-gray-500">Fecha:24/03/2024</p>
                                         </div>
-
                                         <div class="rounded-lg border border-grey-500 p-4 mb-4">
                                             <div class="flex justify-between items-center mb-2">
                                                 <p class="text-sm font-bold">#00024</p>
                                                 <p class="text-sm font-bold text-red-500">Valor: $200.000</p>
                                             </div>
-
                                             <div class=" flex justify-between">
                                                 <p class="text-sm font-bold">JAMES ZÚÑIGA ZÚÑIGA</p>
                                                 <i class="fas fa-play text-gray-500"></i>
                                             </div>
                                             <p class=" text-gray-500">Fecha:24/03/2024</p>
                                         </div>
-
                                     </div>
-
                                     <div class="flex justify-center mt-20">
                                         <div class="mt-20">
                                             <button class="px-2 py-1 border rounded"><<<</button>
@@ -92,10 +78,7 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <!-- Cuentas Por Pagar -->
-
                                 <div class="bg-white rounded-lg shadow p-4 ">
                                     <div class="flex items-center mb-4">
                                         <div class="w-4 h-4 bg-pink-500 rounded-full mr-2"></div>
@@ -212,24 +195,20 @@
                             <div class="bg-white rounded-lg shadow p-4 ">
                                 <div class="flex items-center mb-4">
                                     <div class="w-4 h-4 bg-gray-400 rounded-full mr-2"></div>
-
                                     <h2 class="text-lg font-bold">Formulas</h2>
                                 </div>
                                 <div class="space-y-1">
-
                                     <div class="rounded-lg border border-grey-500 p-4 mb-4 ">
                                         <div class="flex justify-between items-center mb-2">
                                             <p class="font-bold">#00024</p>
                                             <p class=" font-bold text-blue-500">Valor: $200.000</p>
                                         </div>
-
                                         <div class="flex justify-between ">
                                             <p class="text-sm font-bold">DEIMER ANDRÉS NÚÑEZ NOVOA</p>
                                             <i class="fas fa-play text-gray-500"></i>
                                         </div>
                                         <p class=" text-gray-500">Fecha:24/03/2024</p>
                                     </div>
-
                                     <div class="rounded-lg border border-grey-500 p-4 mb-4">
                                         <div class="flex justify-between items-center mb-2">
                                             <p class="text-sm font-bold">#00024</p>
@@ -255,23 +234,15 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
                             <!-- Clientes Section -->
-
-                            <div class="bg-white rounded-lg shadow p-4 ">
+                           <div class="bg-white rounded-lg shadow p-4 ">
                                 <div class="flex items-center mb-4">
                                     <div class="w-4 h-4 bg-gray-400 rounded-full mr-2"></div>
 
                                     <h2 class="text-gray-500 font-bold">Clientes</h2>
                                 </div>
-
                                 <div class="space-y-1">
-
-
                                     <div class="border rounded-lg p-4 flex justify-between items-center">
-
                                         <div>
                                             <p class="text-sm font-semibold text-gray-600">ARLEY TORDECILLA</p>
                                             <p class="text-sm text-gray-600">CC. 11111111110</p>
@@ -367,17 +338,14 @@
                     </div>
                 </div>
 
-                <!--VENTANA FLOTANTE  DE NUEVA FORMULA  -->
-                <div
-                    class="modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black  bg-opacity-50 hidden ">
-
+                         <!--VENTANA FLOTANTE  DE NUEVA FORMULA  -->
+                <div id="modal" class="h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black  bg-opacity-50 hidden ">
                     <div class=" bg-gray-100 p-1 mb-1 rounded-lg border border-grey-500 p-1  full fixed left-50 top-15">
                         <div class="flex justify-between items-center mb-3">
-
                             <h1 class="text-xl font-bold">Nueva formula</h1>
                             <span class="text-xl font-bold absolute right-10">#00045</span>
-                            <div class=" absolute right-0 ">
-                                <button class="cerrar-monddal text-black">&cross;</button>
+                            <div class=" relative h-20  ">
+                                <i id="cerrar-monddal" class="fas fa-times cursor-pointer text-red-500"></i>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-2 mb-2">
@@ -406,14 +374,11 @@
                                 <div class="relative">
                                     <div class="flex items-center justify-between mb-1">
                                         <input type="text" class="w-full border-2  p-1 px-4 " value="Progresivo">
-                                        <button class="text-red-500"><i
-                                                class="fas fa-minus-circle alt absolute right-1 top-2  "></i></button>
-
+                                        <button class="text-red-500"><i class="fas fa-minus-circle alt absolute right-1 top-2  "></i></button>
                                     </div>
                                     <div class="relative">
                                         <input type="text" class="w-full border-2  p-1 px-4 " value="Vidrio Blanco">
-                                        <button class="text-red-500"><i
-                                                class="fas fa-minus-circle alt absolute right-1 top-2  "></i></button>
+                                        <i class="fas fa-minus-circle alt absolute right-1 top-2 text-red-500  "></i>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +423,6 @@
                                 </div>
                             </div>
                             <div class="grid grid-cols-2 gap- mb-4">
-
                                 <div>
                                     <div class="flex justify-center">
                                         <span class="font-bold">MARCO CATERPILLER</span>
@@ -484,44 +448,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute right-0 ">
-                            <p class="font-bold">Total: $120.000</p>
+                        <div class="mb-4 text-right">
                             <p>Consulta: $35.000</p>
-                            <p>Productucto: $520.000</p>
+                            <p>Productos: $520.000</p>
                             <p>Abono: $0</p>
-                            <p>Total: $555.000</p>
-
+                            <p class="font-bold">Total: $555.000</p>
                         </div>
-
-                        <div class="">
-                            <button class="bg-blue-500 text-white px-6 py-2 rounded mb-12 mt-9">Confirmar
-                                Formula</button>
-                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Guardar Cambios</button>
                     </div>
                 </div>
-
+                    </div>
+                </div>
+                <!-- VENTANA DE NUEVA FORMULA  -->
                 <script>
-                    document.querySelector('.Abrir-modal').addEventListener('click', function () {
-                        document.querySelector('.modal').classList.remove('hidden');
+                    document.querySelector('#Abrir-modal').addEventListener('click', function () {
+                        document.querySelector('#modal').classList.remove('hidden');
                     });
 
-                    document.querySelectorAll('.cerrar-monddal').forEach(function (element) {
+                    document.querySelectorAll('#cerrar-monddal').forEach(function (element) {
                         element.addEventListener('click', function () {
-                            document.querySelector('.modal').classList.add('hidden');
+                            document.querySelector('#modal').classList.add('hidden');
                         });
                     });
 
                 </script>
 
-                <!-- VENTANA FLOTANTE DE NUEVA COMPRA -->
-                <div
-                    class="modal_NuevaCompta h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+                <!-- VENTANA FLOTANTE DE CLIENTE -->
+                <div id="modal_clientes" class="h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
                     <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
                         <div class="flex justify-between items-center mb-4">
                             <h1 class="text-xl font-bold">Nueva Venta</h1>
                             <span class="text-xl font-bold">#00045</span>
-                            <div>
-                                <button class="cerrar-monddal text-black">&cross;</button>
+                            <div class="relative h-20">
+                                <i id="cerrar-monddal" class="fas fa-times cursor-pointer text-red-500"></i>
                             </div>
                         </div>
                         <hr class="mb-4">
@@ -569,30 +528,27 @@
                                 <span>Total: $120.000</span>
                             </div>
                         </div>
-                        <div class="text-right mb-4">
+                        <div class="mb-4 text-right">
                             <p>Consulta: $35.000</p>
                             <p>Productos: $520.000</p>
                             <p>Abono: $0</p>
                             <p class="font-bold">Total: $555.000</p>
                         </div>
-                        <div class="flex space-x-2">
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">Confirmar
-                                Venta</button>
-                            <button
-                                class="bg-blue-200 hover:bg-blue-700 hover:text-white text-black px-4 py-2 rounded">Imprimir
-                                Factura</button>
+                        <div class="flex space-x-2 ">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">Confirmar Venta</button>
+                            <button class="bg-blue-200 hover:bg-blue-700 hover:text-white text-black px-4 py-2 rounded">Imprimir  Factura</button>
                         </div>
                     </div>
                 </div>
 
                 <script>
-                    document.querySelector('.Clientes_modal').addEventListener('click', function () {
-                        document.querySelector('.modal_NuevaCompta').classList.remove('hidden');
+                    document.querySelector('#ClientesModal').addEventListener('click', function () {
+                        document.querySelector('#modal_clientes').classList.remove('hidden');
                     });
 
-                    document.querySelectorAll('.cerrar-monddal').forEach(function (element) {
+                    document.querySelectorAll('#cerrar-monddal').forEach(function (element) {
                         element.addEventListener('click', function () {
-                            document.querySelector('.modal_NuevaCompta').classList.add('hidden');
+                            document.querySelector('#modal_clientes').classList.add('hidden');
                         });
                     });
 
@@ -602,7 +558,5 @@
                         loadHTML('./Layout/header.html', '#header');
                     });
                 </script>
-
 </body>
-
 </html>

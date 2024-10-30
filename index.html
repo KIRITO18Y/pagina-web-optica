@@ -176,14 +176,9 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
-
                     <!-- Formulas Section -->
 
                     <div class="container mx-auto p-4">
@@ -283,10 +278,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- Productos Section -->
-
                             <div class="bg-white rounded-lg shadow p-4 ">
                                 <div class="flex items-center mb-4">
                                     <div class="w-4 h-4 bg-gray-400 rounded-full mr-2"></div>
@@ -461,15 +453,7 @@
                 </div>
                 <!-- VENTANA DE NUEVA FORMULA  -->
                 <script>
-                    document.querySelector('#Abrir-modal').addEventListener('click', function () {
-                        document.querySelector('#modal').classList.remove('hidden');
-                    });
-
-                    document.querySelectorAll('#cerrar-monddal').forEach(function (element) {
-                        element.addEventListener('click', function () {
-                            document.querySelector('#modal').classList.add('hidden');
-                        });
-                    });
+               
 
                 </script>
 
@@ -542,6 +526,18 @@
                 </div>
 
                 <script>
+                         // VENTANA DE NUEVA FORMULA 
+                      document.querySelector('#Abrir-modal').addEventListener('click', function () {
+                        document.querySelector('#modal').classList.remove('hidden');
+                    });
+
+                    document.querySelectorAll('#cerrar-monddal').forEach(function (element) {
+                        element.addEventListener('click', function () {
+                            document.querySelector('#modal').classList.add('hidden');
+                        });
+                    });
+                            // VENTANA DE NUEVO CLIENTES
+
                     document.querySelector('#ClientesModal').addEventListener('click', function () {
                         document.querySelector('#modal_clientes').classList.remove('hidden');
                     });
@@ -557,6 +553,9 @@
                         loadHTML('./Layout/menu.html', '#menu');
                         loadHTML('./Layout/header.html', '#header');
                     });
+
+
+                  
                 </script>
 </body>
 </html>

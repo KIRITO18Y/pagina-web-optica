@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devi <link rel=" stylesheet" href="index.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script type="text/javascript" src="./../scripts/main.js"></script>
@@ -30,9 +29,7 @@
         <div class="w-1/6 bg-white h-screen p-4" id="menu"></div>
         <div class="w-5/6 p-4">
             <div class="flex space-x-4 mb-4">
-                <button id="NuevoCliente"
-                    class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">+Nuevo
-                    Clientes</button>
+                <button id="NuevoCliente" class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">+Nuevo Clientes</button>
             </div>
             <!-- TABLA DE CLIENTES -->
             <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
@@ -45,7 +42,6 @@
                                 class="text-white font-bold border hover:bg-blue-700 p-2 bg-blue-500 px-4 py-2 rounded ">Buscar</button>
                         </div>
                     </div>
-
                 </div>
                 <table class="w-full border-collapse border bg-white p-1 rounded shadow">
                     <thead>
@@ -125,8 +121,7 @@
         </div>
     </div>
     <!-- VENTANA DE NUEVO CLIENTE -->
-    <div id="sidebar"
-        class="fixed inset-y-3 right-0 transform translate-x-full transition-transform duration-300 bg-gray-800 text-black-500 w-80">
+    <div id="sidebar"class="fixed inset-y-3 right-0 transform translate-x-full transition-transform duration-300 bg-gray-500 text-black-500 ">
         <div class="flex justify-center items-center h-screen bg-gray-50">
             <div class="bg-white p-6 rounded-lg shadow-lg w-96">
                 <div class="flex justify-between items-center mb-4">
@@ -184,7 +179,7 @@
             </div>
         </div>
     </div>
-
+                 <!-- MODAL DE CLIENTES -->
     <script>
         const NuevoCliente = document.getElementById('NuevoCliente');
         const sidebar = document.getElementById('sidebar');

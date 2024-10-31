@@ -35,7 +35,6 @@
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
                                 <!-- Formulas Section -->
-
                                 <div class="bg-white rounded-lg shadow p-4 ">
                                     <div class="flex items-center mb-4">
                                         <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
@@ -111,11 +110,8 @@
                                                 <i class="fas fa-play text-gray-500"></i>
                                             </div>
                                             <p class=" text-gray-500">Fecha:24/03/2024</p>
-
                                         </div>
-
                                     </div>
-
                                     <div class="flex justify-center mt-20">
                                         <div class="mt-20">
                                             <button class="px-2 py-1 border rounded">
@@ -447,7 +443,7 @@
                 </div>
             </div>
         </div>
-        <!-- VENTANA FLOTANTE DE CLIENTE -->
+                          <!-- VENTANA FLOTANTE DE CLIENTE -->
         <div id="modal_clientes"
             class="h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
             <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
@@ -523,7 +519,7 @@
         </div>
 
         <script>
-            // VENTANA DE NUEVA FORMULA 
+                      // VENTANA DE NUEVA FORMULA 
             document.querySelector('#Abrir-modal').addEventListener('click', function () {
                 document.querySelector('#modal').classList.remove('hidden');
             });
@@ -533,8 +529,8 @@
                     document.querySelector('#modal').classList.add('hidden');
                 });
             });
-            // VENTANA DE NUEVO CLIENTES
 
+                    // VENTANA DE NUEVO CLIENTES
             document.querySelector('#ClientesModal').addEventListener('click', function () {
                 document.querySelector('#modal_clientes').classList.remove('hidden');
             });
@@ -544,7 +540,7 @@
                     document.querySelector('#modal_clientes').classList.add('hidden');
                 });
             });
-            // Carga de la barra lateral
+                      // Carga de la barra lateral
             document.addEventListener("DOMContentLoaded", function () {
                 loadHTML('./Layout/menu.html', '#menu');
                 loadHTML('./Layout/header.html', '#header');

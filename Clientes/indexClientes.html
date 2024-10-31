@@ -8,25 +8,12 @@
     <title>Clientes</title>
 </head>
 <body>
-    <div class="flex items-center justify-between p-4 border-b">
-
-        <div class="flex items-center">
-            <img alt="Optica Kenedy logo" class="rounded-full" height="50"
-                src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg"
-                width="50" />
-            <span class="ml-2 text-gray-700">
-                Optica Kenedy
-            </span>
-        </div>
-        <div class="flex items-center">
-            <img alt="User profile picture" class="rounded-full" height="50"
-                src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg"
-                width="50" />
-        </div>
+    <div id="header" class="flex items-center justify-between p-4 border-b">
+        
     </div>
     <!-- container -->
     <div class="flex">
-        <div class="w-1/6 bg-white h-screen p-4" id="menu"></div>
+        <div id="menu" class="w-1/6 bg-white h-screen p-4"></div>
         <div class="w-5/6 p-4">
             <div class="flex space-x-4 mb-4">
                 <button id="NuevoCliente" class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">+Nuevo Clientes</button>
@@ -179,6 +166,10 @@
             </div>
         </div>
     </div>
+                <!-- VENTANA DE PERFIL -->
+              
+
+
                  <!-- MODAL DE CLIENTES -->
     <script>
         const NuevoCliente = document.getElementById('NuevoCliente');
@@ -188,7 +179,7 @@
         NuevoCliente.addEventListener('click', () => {
             sidebar.classList.toggle('translate-x-full');
         });
-
+    
         eliminarVentna.addEventListener('click', () => {
             sidebar.classList.toggle('translate-x-full');
         });
@@ -202,6 +193,7 @@
         // Carga de la barra lateral
         document.addEventListener("DOMContentLoaded", function () {
             loadHTML('./../Layout/menu.html', '#menu');
+            loadHTML('./../Layout/header.html', '#header');
         });
     </script>
 

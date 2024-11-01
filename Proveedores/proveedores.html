@@ -6,24 +6,25 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script type="text/javascript" src="./../scripts/main.js"></script>
+   <script type="text/javascript" src="./../scripts/main.js"></script>
     <title>Proveedores</title>
 </head>
+
 <body>
-              <!-- HEADER -->
-    <div id="#header" class="flex items-center justify-between p-4 border-b">
+    <!-- HEADER -->
+    <div id="header" class="flex items-center justify-between p-4 border-b">
     </div>
-                <!-- MENU -->
+    <!-- MENU -->
     <div class="flex">
         <div id="menu" class="w-1/6 bg-white h-screen p-4"></div>
-             <!-- MENU -->
+        <!-- MENU -->
         <div class="w-5/6 p-4">
             <div class="flex space-x-4 mb-4">
                 <button id="nuevoProveedor"
                     class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">+Nuevo Proveedor
                 </button>
             </div>
-             <!-- TABLA DE PROVEEDOR -->
+            <!-- TABLA DE PROVEEDOR -->
             <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 mb-4  ">
                 <div class="mb-2">
                     <div class="relative">
@@ -92,110 +93,119 @@
             </div>
         </div>
 
-                      <!-- VENTANA DE PROVEEDORES -->
-     <div id="ventanProveedores" class="fixed inset-y-3 h-screen right-0 transform translate-x-full transition-transform duration-300 bg-gray-800 text-black-500">
-        <div class="flex justify-center h-screen bg-gray-50 border-2 border-grey-200 ">
-            <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl text-black-600">OPTICA</h2>
-                    <i id="cerrarVentana" class="fas fa-times cursor-pointer text-red-500"></i>
+        <!-- VENTANA DE PROVEEDORES -->
+        <div id="ventanProveedores"
+            class="fixed inset-y-3 h-screen right-0 transform translate-x-full transition-transform duration-300 bg-gray-800 text-black-500">
+            <div class="flex justify-center h-screen bg-gray-50 border-2 border-grey-200 ">
+                <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl text-black-600">OPTICA</h2>
+                        <i id="cerrarVentana" class="fas fa-times cursor-pointer text-red-500"></i>
+                    </div>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Nombres</label>
+                            <input type="text" placeholder="Nombres"
+                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">NIT</label>
+                            <input type="text" placeholder="NIT"
+                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Celular</label>
+                            <input type="text" placeholder="Celular"
+                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Teléfono</label>
+                            <input type="text" placeholder="Teléfono"
+                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Dirección</label>
+                            <input type="text" placeholder="Dirección"
+                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700">Email</label>
+                            <input type="email" placeholder="Email"
+                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 p-2 rounded">Guardar
+                                Cambios</button>
+                        </div>
+                    </form>
                 </div>
-                <form>
-                    <div class="mb-4">
-                        <label class="block text-gray-700">Nombres</label>
-                        <input type="text" placeholder="Nombres" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        </div>
+        <!-- VENTANA DE PERFIL  -->
+        <div id="ventaPerfil" class="fixed inset-y-3 right-5 text-black-500 p-7 bg-opacity-50 hidden">
+            <div class="max-w-sm mx-auto mt-10 bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <div class="bg-blue-500 p-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-white text-lg">
+                            Persona 1
+                        </h2>
+                        <button>
+                            <i class="fas fa-pen text-white"></i>
+                        </button>
                     </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700">NIT</label>
-                        <input type="text" placeholder="NIT" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <div class="flex justify-center mt-4">
+                        <img alt="Profile picture of a person with a blue background and lightning"
+                            class="w-20 h-20 rounded-full" height="80"
+                            src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg"
+                            width="80" />
                     </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700">Celular</label>
-                        <input type="text" placeholder="Celular" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-white font-semibold">
+                        JAMES ZUÑIGA
+                    </h3>
+                    <p class="text-white">jameszuniga348@gmail.com</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <button>
+                            <i class="fas fa-key text-blue-700"> </i>
+                        </button>
+                        <button>
+                            <i class="fas fa-laptop text-blue-700"> </i>
+                        </button>
+                        <button class="">
+                            <i class="fas fa-map-marker-alt text-blue-700"> </i>
+                        </button>
                     </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700">Teléfono</label>
-                        <input type="text" placeholder="Teléfono" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="p-1">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-cog text-gray-400"></i>
+                        <button class="text-gray-400 hover:bg-gray-700">Administrar tu Cuenta de Optica</button>
                     </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700">Dirección</label>
-                        <input type="text" placeholder="Dirección" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <div class="flex items-center space-x-2 mt-2">
+                        <i class="fas fa-sign-out-alt text-gray-400"></i>
+                        <button class="text-gray-400 hover:bg-gray-700"> Salir</button>
                     </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700">Email</label>
-                        <input type="email" placeholder="Email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="bg-gray-800 p-2">
+                    <h4 class="text-gray-400">
+                        Otros perfiles
+                    </h4>
+                    <div class="flex items-center space-x-2 mt-2">
+                        <i class="fas fa-user text-gray-400"></i>
+                        <button class="text-gray-400 hover:bg-gray-700"> Invitado</button>
                     </div>
-                    <div>
-                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 p-2 rounded">Guardar Cambios</button>
+                    <div class="flex items-center space-x-2 mt-2">
+                        <i class="fas fa-plus text-gray-400"></i>
+                        <button class="text-gray-400 hover:bg-gray-700">Agregar</button>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-              <!-- VENTANA DE PERFIL  -->   
-<div id="ventaPerfil" class="fixed inset-y-3 right-5 text-black-500 p-7 bg-opacity-50 hidden">
-    <div class="max-w-sm mx-auto mt-10 bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-        <div class="bg-blue-500 p-4">
-            <div class="flex justify-between items-center">
-                <h2 class="text-white text-lg">
-                    Persona 1
-                </h2>
-                <button> 
-                    <i class="fas fa-pen text-white"></i>
-                </button>
-            </div>
-            <div class="flex justify-center mt-4">
-                <img alt="Profile picture of a person with a blue background and lightning"
-                    class="w-20 h-20 rounded-full" height="80"
-                    src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg"
-                    width="80" />
-            </div>
-        </div>
-        <div class="p-4 text-center">
-            <h3 class="text-white font-semibold">
-                JAMES ZUÑIGA
-            </h3>
-            <p class="text-white">jameszuniga348@gmail.com</p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <button>
-                    <i class="fas fa-key text-blue-700"> </i>
-                </button>
-                <button>
-                    <i class="fas fa-laptop text-blue-700"> </i>
-                </button>
-                <button class="">
-                    <i class="fas fa-map-marker-alt text-blue-700"> </i>
-                </button>
-            </div>
-        </div>
-        <div class="p-1">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-cog text-gray-400"></i>
-                <button class="text-gray-400 hover:bg-gray-700">Administrar tu Cuenta de Optica</button>
-            </div>
-            <div class="flex items-center space-x-2 mt-2">
-                <i class="fas fa-sign-out-alt text-gray-400"></i>
-                <button class="text-gray-400 hover:bg-gray-700"> Salir</button>
-            </div>
-        </div>
-        <div class="bg-gray-800 p-2">
-            <h4 class="text-gray-400">
-                Otros perfiles
-            </h4>
-            <div class="flex items-center space-x-2 mt-2">
-                <i class="fas fa-user text-gray-400"></i>
-               <button class="text-gray-400 hover:bg-gray-700"> Invitado</button>
-            </div>
-            <div class="flex items-center space-x-2 mt-2">
-                <i class="fas fa-plus text-gray-400"></i>
-                <button class="text-gray-400 hover:bg-gray-700">Agregar</button>
-            </div> 
-        </div>
-    </div>
- </div>  
-</div>
-                <!-- VENTANA DE NUEVO PROVEEDORES -->
-    <script>
+    <!-- VENTANA DE NUEVO PROVEEDORES -->
+    <script type="text/javascript">
         const nuevoProveedor = document.getElementById('nuevoProveedor');
         const ventanProveedoresr = document.getElementById('ventanProveedores');
         const cerrarVentana = document.getElementById("cerrarVentana");
@@ -206,34 +216,15 @@
         cerrarVentana.addEventListener('click', () => {
             ventanProveedores.classList.toggle('translate-x-full');
         });
-        
+
         // Manejo del formulario de registro
-        document.getElementById('registration-form').addEventListener('submit', (event) => {
-            event.preventDefault();
-            // Aquí puedes manejar el registro, como enviar los datos a un servidor
-            alert('Registro exitoso');
-            ventanProveedores.classList.add('translate-x-full'); // Cerrar el menú después del registro
-        });
-                     // VENTANA DE PERFIL
-         
-document.querySelector('#btPerfil').addEventListener('click', function () {
-    document.querySelector('#ventaPerfil').classList.remove('hidden');
-});
-
-// Agregar evento al botón de cerrar dentro de #ventaPerfil
-document.querySelector('#closeButton').addEventListener('click', function () {
-    document.querySelector('#ventaPerfil').classList.add('hidden');
-});
 
 
-
-      // Carga de la barra lateral
-document.addEventListener("DOMContentLoaded", function () {
-    loadHTML('./../Layout/menu.html', '#menu1');
-    loadHTML('./../Layout/header.html', '#header');
-});
-
+        // Carga de la barra lateral
+        document.addEventListener("DOMContentLoaded", function () {
+            loadHTML('./../Layout/menu.html','#menu');
+            loadHTML('./../Layout/header.html','#header');
+        }); 
     </script>
-     
 </body>
 </html>

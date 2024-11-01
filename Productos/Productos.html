@@ -4,60 +4,17 @@
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="text/javascript" src="/scripts/main.js"></script>
     <title>Productos</title>
 </head>
 <body>
-    <div class="flex items-center justify-between p-4 border-b">
-        <div class="flex items-center">
-            <img alt="Optica Kenedy logo" class="rounded-full" height="50"
-                src="https://storage.googleapis.com/a1aa/image/1ZBugpj5vP7JAhmHHHWRrVFlUO5fAzdie7refk8GPRwoiJOOB.jpg"
-                width="50" />
-            <span class="ml-2 text-gray-700">
-                Optica Kenedy
-            </span>
-        </div>
-        <div class="flex items-center">
-            <img alt="User profile picture" class="rounded-full" height="50"
-                src="https://storage.googleapis.com/a1aa/image/bGURaUfrn3TSKiJ5qyKDDXQ2de2vSaXLDfj3MIOzUniZxEHnA.jpg"
-                width="50" />
-        </div>
+    <div id="header" class="flex items-center justify-between p-4 border-b">
     </div>
     <!-- CONTAINER  -->
     <div class="flex">
         <!-- Encelas  -->
-        <div class="w-1/6 bg-white h-screen p-4">
-            <div class="space-y-1">
-                <div class="flex flex-col items-center rounded-lg p-1 ml-2">
-                    <a href="/index.html"> <img class="w-12 h-12" src="/iconos/casa-icono-silueta.png"
-                            alt="Inicio"></a>
-                    <p class="text-center font-bold h-10 mt-1"><a href="/index.html">Inicio</a></p>
-                </div>
-                <div class="flex flex-col items-center rounded-lg p-1">
-                    <a href="/Clientes/indexClientes.html"><img class="w-12 " src="/iconos/nueva-cuenta.png" alt=""></a>
-                    <p class="mt-1 font-bold"><a href="/Clientes/indexClientes.html">Clientes</a></p>
-                </div>
-                <div class="flex flex-col items-center  p-1">
-                    <a href="/Proveedores/proveedores.html"><img class="w-12" src="/iconos/personas.png" alt=""></a>
-                    <p class="mt-1 font-bold"><a href="/Proveedores/proveedores.html">Proveedores</a></p>
-                </div>
-                <div class="flex flex-col items-center p-1">
-                    <a href="/Productos/Productos.html"> <img class="w-12" src="/iconos/orden.png" alt=""></a>
-                    <p class="mt-1 font-bold"><a href="/Productos/Productos.html">Productos</a></p>
-                </div>
-                <div class="flex flex-col items-center p-1">
-                    <a href="/Fomulas/FormulaIndex.html"><img class="w-12" src="/iconos/computadora-portatil.png"
-                            alt="Foto"></a>
-                    <p class="mt-1 font-bold"><a href="/Fomulas/FormulaIndex.html">Fórmulas</a></p>
-                </div>
-                <div class="flex flex-col items-center p-1">
-                    <a href="/Facturación/FacturaciónIndex.html"><img class="w-12" src="/iconos/factura.png" alt=""></a>
-                    <p class="mt-1 font-bold"><a href="/Facturación/FacturaciónIndex.html">Facturación</a></p>
-                </div>
-                <div class="flex flex-col items-center p-1">
-                    <a href=""><img class="w-12" src="/iconos/configuraciones-de-la-cuenta.png" alt=""></a>
-                    <p class="mt-1 font-bold">Configuraciones</p>
-                </div>
-            </div>
+        <div  id="menu" class="w-1/6 bg-white h-screen p-4 posicio ">
+            
         </div>
 
         <div class="w-5/6 p-4">
@@ -293,10 +250,10 @@
             productomodal.classList.toggle('translate-x-full');
         });
 
-        document.getElementById('registration-form').addEventListener('submit', (event) => {
-            event.preventDefault();
-            alert('Registro exitoso');
-            productoModal.classList.add('translate-x-full');
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            loadHTML('./../Layout/menu.html', '#menu');
+            loadHTML('./../Layout/header.html', '#header');
         });
     </script>
 </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -7,6 +8,7 @@
     <title>Pagina Principal</title>
     <script type="text/javascript" src="scripts/main.js"></script>
 </head>
+
 <body>
     <div id="header" class="flex items-center justify-between p-4 border-b">
     </div>
@@ -23,9 +25,11 @@
                     <button id="ClientesModal"
                         class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold ">
                         + Nuevo Cliente</button>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> + Nuevo
-                        Producto</button>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> + Nuevo
+                    <button id="ventaModal"
+                        class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> + Nuevo
+                        Venta</button>
+                    <button id="compraModal"
+                        class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold"> + Nueva
                         Compra</button>
                 </div>
                 <!-- Cards Section -->
@@ -69,7 +73,7 @@
                                     <div class="flex justify-center mt-20">
                                         <div class="mt-20">
                                             <button class="px-2 py-1 border rounded">
-                                                <<<</button>
+                                                <<<< /button>
                                                     <button class="px-2 py-1 border rounded">1</button>
                                                     <button class="px-2 py-1 border rounded">2</button>
                                                     <button class="px-2 py-1 border rounded">3</button>
@@ -211,7 +215,7 @@
                                 <div class="flex justify-center mt-20">
                                     <div class="mt-20">
                                         <button class="px-2 py-1 border rounded">
-                                            <<<<</button>
+                                            <<<<< /button>
                                                 <button class="px-2 py-1 border rounded">1</button>
                                                 <button class="px-2 py-1 border rounded">2</button>
                                                 <button class="px-2 py-1 border rounded">3</button>
@@ -320,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                             <!--VENTANA FLOTANTE  DE NUEVA FORMULA  -->
+                <!--VENTANA FLOTANTE  DE NUEVA FORMULA  -->
                 <div id="modal"
                     class="h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black  bg-opacity-50 hidden ">
                     <div class=" bg-gray-100 p-1 mb-1 rounded-lg border border-grey-500 p-1  full fixed left-50 top-15">
@@ -443,13 +447,13 @@
                 </div>
             </div>
         </div>
-                          <!-- VENTANA FLOTANTE DE CLIENTE -->
+        <!-- VENTANA FLOTANTE DE CLIENTE -->
         <div id="modal_clientes"
             class="h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
             <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
                 <div class="flex justify-between items-center mb-4">
                     <h1 class="text-xl font-bold">Nueva Venta</h1>
-                    <span class="text-xl font-bold">#00045</span>
+                    <span class="text-xl font-bold">#00046</span>
                     <div class="relative h-20">
                         <i id="cerrar-monddal" class="fas fa-times cursor-pointer text-red-500"></i>
                     </div>
@@ -518,8 +522,157 @@
             </div>
         </div>
 
+        <!-- VENTANA FLOTANTE DE NUEVA VENTA  -->
+        <div id="modal_venta"
+            class="h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
+                <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-xl font-bold">Nueva Venta</h1>
+                    <span class="text-xl font-bold">#00048</span>
+                    <div class="relative h-20">
+                        <i id="cerrar-venta" class="fas fa-times cursor-pointer text-red-500"></i>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="grid grid-cols-2 gap-4 mb-9">
+                    <div>
+                        <label for="tipoPago" class="block text-sm font-medium text-gray-700">Tipo de
+                            Pago</label>
+                        <select id="tipoPago"
+                            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <option>Seleccione</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cliente" class="block text-sm font-medium text-gray-700">Cliente</label>
+                        <div class="relative mt-1">
+                            <input type="text" id="cliente"
+                                class="block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-search text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-2 mb-1">
+                    <button class="bg-blue-600 text-white font-bold px-4 py-2 rounded">+ Producto</button>
+                    <button class="bg-green-500 text-black font-bold px-4 py-2 rounded">+ Reparación</button>
+                    <button class="bg-blue-200 text-black px-4 py-2 rounded">+ Abono</button>
+                </div>
+                <div class="mb-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-bold">MARCO CATERPILLER</span>
+                        <div class="flex items-center space-x-2">
+                            <input type="text" value="200.000"
+                                class="w-20 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <input type="text" value="2"
+                                class="w-10 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                        </div>
+                        <span>Total: $400.000</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-bold">REPACIÓN LENTES</span>
+                        <div class="flex items-center space-x-2">
+                            <input type="text" value="120.000"
+                                class="w-20 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <input type="text" value="1"
+                                class="w-10 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                        </div>
+                        <span>Total: $120.000</span>
+                    </div>
+                </div>
+                <div class="mb-4 text-right">
+                    <p>Consulta: $35.000</p>
+                    <p>Productos: $520.000</p>
+                    <p>Abono: $0</p>
+                    <p class="font-bold">Total: $555.000</p>
+                </div>
+                <div class="flex space-x-2 ">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">Confirmar Venta</button>
+                    <button class="bg-blue-200 hover:bg-blue-700 hover:text-white text-black px-4 py-2 rounded">Imprimir
+                        Factura</button>
+                </div>
+            </div>
+        </div>
+
+                <!-- VENTANA FLOTANTE DE NUEVA COMPRA  -->
+        <div id="modal_compra"
+            class="h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
+                <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-xl font-bold">Nueva Compra</h1>
+                    <span class="text-xl font-bold">#00048</span>
+                    <div class="relative h-20">
+                        <i id="cerrar-compra" class="fas fa-times cursor-pointer text-red-500"></i>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="grid grid-cols-2 gap-4 mb-9">
+                    <div>
+                        <label for="tipoPago" class="block text-sm font-medium text-gray-700">Tipo de
+                            Pago</label>
+                        <select id="tipoPago"
+                            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <option>Seleccione</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cliente" class="block text-sm font-medium text-gray-700">Cliente</label>
+                        <div class="relative mt-1">
+                            <input type="text" id="cliente"
+                                class="block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-search text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-2 mb-1">
+                    <button class="bg-blue-600 text-white font-bold px-4 py-2 rounded">+ Producto</button>
+                    <button class="bg-green-500 text-black font-bold px-4 py-2 rounded">+ Reparación</button>
+                    <button class="bg-blue-200 text-black px-4 py-2 rounded">+ Abono</button>
+                </div>
+                <div class="mb-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-bold">MARCO CATERPILLER</span>
+                        <div class="flex items-center space-x-2">
+                            <input type="text" value="200.000"
+                                class="w-20 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <input type="text" value="2"
+                                class="w-10 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                        </div>
+                        <span>Total: $400.000</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-bold">REPACIÓN LENTES</span>
+                        <div class="flex items-center space-x-2">
+                            <input type="text" value="120.000"
+                                class="w-20 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <input type="text" value="1"
+                                class="w-10 py-1 px-2 border border-gray-300 rounded-md text-center">
+                            <button class="text-red-500"><i class="fas fa-minus-circle"></i></button>
+                        </div>
+                        <span>Total: $120.000</span>
+                    </div>
+                </div>
+                <div class="mb-4 text-right">
+                    <p>Consulta: $35.000</p>
+                    <p>Productos: $520.000</p>
+                    <p>Abono: $0</p>
+                    <p class="font-bold">Total: $555.000</p>
+                </div>
+                <div class="flex space-x-2 ">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">Confirmar Venta</button>
+                    <button class="bg-blue-200 hover:bg-blue-700 hover:text-white text-black px-4 py-2 rounded">Imprimir
+                        Factura</button>
+                </div>
+            </div>
+        </div>
         <script>
-                      // VENTANA DE NUEVA FORMULA 
+            // VENTANA DE NUEVA FORMULA 
             document.querySelector('#Abrir-modal').addEventListener('click', function () {
                 document.querySelector('#modal').classList.remove('hidden');
             });
@@ -530,7 +683,7 @@
                 });
             });
 
-                    // VENTANA DE NUEVO CLIENTES
+            // VENTANA DE NUEVO CLIENTES
             document.querySelector('#ClientesModal').addEventListener('click', function () {
                 document.querySelector('#modal_clientes').classList.remove('hidden');
             });
@@ -540,11 +693,35 @@
                     document.querySelector('#modal_clientes').classList.add('hidden');
                 });
             });
-                      // Carga de la barra lateral
+
+            // VENTANA DE NUEVO VENTA
+            document.querySelector('#ventaModal').addEventListener('click', function () {
+                document.querySelector('#modal_venta').classList.remove('hidden');
+            });
+
+            document.querySelectorAll('#cerrar-venta').forEach(function (element) {
+                element.addEventListener('click', function () {
+                    document.querySelector('#modal_venta').classList.add('hidden');
+                });
+            });
+
+            // VENTANA DE NUEVA COMPRA
+            document.querySelector('#compraModal').addEventListener('click', function () {
+                document.querySelector('#modal_compra').classList.remove('hidden');
+            });
+
+            document.querySelectorAll('#cerrar-compra').forEach(function (element) {
+                element.addEventListener('click', function () {
+                    document.querySelector('#modal_compra').classList.add('hidden');
+                });
+            });
+
+            // Carga de la barra lateral
             document.addEventListener("DOMContentLoaded", function () {
                 loadHTML('./Layout/menu.html', '#menu');
                 loadHTML('./Layout/header.html', '#header');
             });
         </script>
 </body>
+
 </html>

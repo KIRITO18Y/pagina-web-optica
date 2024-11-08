@@ -12,13 +12,13 @@
     </div>
                      <!-- container -->
     <div class="flex">
-        <div id="menu" class="w-1/6 bg-white h-screen p-4"></div>
+        <div id="menu" class="flex h-screen bg-white h-auto md:h-screen p-4"></div>
         <div class="w-5/6 p-4">
             <div class="flex space-x-4 mb-4">
                 <button id="NuevoCliente" class=" bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">+Nuevo Clientes</button>
             </div>
                             <!-- TABLA DE CLIENTES -->
-            <div class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
+            <div id="contacTabla" class="bg-gray-300 p-4 mb-1 rounded-lg border border-grey-500 p-4 mb-4  ">
                 <div class="mb-2">
                     <div class="relative">
                         <div class="inline-flex">
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <table class="w-full border-collapse border bg-white p-1 rounded shadow">
+                <table id="dataTable" class="w-full border-collapse border bg-white rounded shadow">
                     <thead>
                         <tr>
                             <th class="border p-2">Nombre</th>
@@ -115,12 +115,11 @@
                 <form id="registration-form">
                     <div class="mb-4">
                         <label class="block text-gray-700">Nombres</label>
-                        <input type="text" placeholder="Nombres"
-                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Nombres" id="nombres" required  class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Apellidos</label>
-                        <input type="text" placeholder="Apellidos"
+                        <input type="text" placeholder="Apellidos" id="apellidos" required
                             class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
@@ -132,31 +131,31 @@
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Número de identificación</label>
-                        <input type="text" placeholder="Identificación"
+                        <input type="text" placeholder="Identificación" id="identificacion" required
                             class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Celular</label>
-                        <input type="text" placeholder="Celular"
+                        <input type="text" placeholder="Celular" id="celular" required
                             class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Teléfono</label>
-                        <input type="text" placeholder="Teléfono"
+                        <input type="text" placeholder="Teléfono" id="telefono" required
                             class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Dirección</label>
-                        <input type="text" placeholder="Dirección"
+                        <input type="text" placeholder="Dirección" id="direccion" required
                             class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Email</label>
-                        <input type="email" placeholder="Email"
+                        <input type="email" placeholder="Email" id="email" required
                             class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div>
-                        <button type="submit"
+                        <button type="submit" id="crearCliente" r
                             class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Crear</button>
                     </div>
                 </form>
@@ -184,7 +183,7 @@
             alert('Registro exitoso');
             sidebar.classList.add('translate-x-full');
         });
-
+        
         // Carga de la barra lateral
         document.addEventListener("DOMContentLoaded", function () {
             loadHTML('./../Layout/menu.html', '#menu');

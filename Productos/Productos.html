@@ -161,7 +161,7 @@
             <div class="bg-white p-6 rounded-lg shadow-lg">
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="text-2xl text-black-600">Nuevo Producto</h2>
-                    <i id="cerrarModal" class="fas fa-times cursor-pointer text-red-500"></i>
+                    <i id="cerrar" class="fas fa-times cursor-pointer text-red-500"></i>
                 </div>
                 <form>
                     <div class="mb-4">
@@ -239,13 +239,13 @@
                     //MODAL DE NUEVO PRODUTO
         const nuevoProducto = document.getElementById('nuevoProducto');
         const productoModal = document.getElementById('productoModal');
-        const cerrarModal = document.getElementById('cerrarModal');
+        const cerrar = document.getElementById('cerrar');
 
         nuevoProducto.addEventListener('click', () => {
             productoModal.classList.toggle('translate-x-full');
         });
-        cerrarModal.addEventListener('click', () => {
-            productomodal.classList.toggle('translate-x-full');
+        cerrar.addEventListener('click', () => {
+            productoModal.classList.toggle('translate-x-full');
         });
 
                     // Carga de la barra lateral
